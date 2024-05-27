@@ -1,0 +1,431 @@
+{
+  "EnquiryModule.dll": {
+    "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Program.cs": {
+      "Program": {
+        "System.Void Program::<Main>$(System.String[])": {
+          "Lines": {
+            "5": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "21": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "30": 0,
+            "32": 0,
+            "34": 0
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 160,
+              "EndOffset": 162,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 160,
+              "EndOffset": 180,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\DocumentRequest.cs": {
+      "EnquiryModule.Models.DocWithImageData": {
+        "EnquiryModule.Models.DocumentRequest EnquiryModule.Models.DocWithImageData::get_DocModel()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.String EnquiryModule.Models.DocWithImageData::get_ImageData()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Infrastructure\\EnquiryModuleRepo.cs": {
+      "EnquiryModule.Infrastructure.EnquiryModuleRepo": {
+        "EnquiryModule.Models.Document EnquiryModule.Infrastructure.EnquiryModuleRepo::CreateDocument(System.Int32,System.Int32,System.Int32,System.Byte[])": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        },
+        "EnquiryModule.Models.Enquirer EnquiryModule.Infrastructure.EnquiryModuleRepo::CreateEnquiry(EnquiryModule.Models.Enquirer)": {
+          "Lines": {
+            "31": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0
+          },
+          "Branches": []
+        },
+        "EnquiryModule.Models.Enquirer EnquiryModule.Infrastructure.EnquiryModuleRepo::GetEnquirer(System.Int32)": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        },
+        "EnquiryModule.Models.Enquirer EnquiryModule.Infrastructure.EnquiryModuleRepo::UpdateEnquirer(EnquiryModule.Models.Enquirer)": {
+          "Lines": {
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0
+          },
+          "Branches": []
+        },
+        "EnquiryModule.Models.DocWithImageData EnquiryModule.Infrastructure.EnquiryModuleRepo::GetDocument(System.Int32)": {
+          "Lines": {
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0
+          },
+          "Branches": []
+        },
+        "EnquiryModule.Models.Document EnquiryModule.Infrastructure.EnquiryModuleRepo::UpdateDocument(EnquiryModule.Models.Document)": {
+          "Lines": {
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "100": 0,
+            "102": 0,
+            "103": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 EnquiryModule.Infrastructure.EnquiryModuleRepo::AssignManager(System.Int32)": {
+          "Lines": {
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "118": 0,
+            "119": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "133": 0,
+            "134": 0,
+            "138": 0
+          },
+          "Branches": [
+            {
+              "Line": 118,
+              "Offset": 513,
+              "EndOffset": 515,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 118,
+              "Offset": 513,
+              "EndOffset": 608,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 EnquiryModule.Infrastructure.EnquiryModuleRepo::GetAllEnquires()": {
+          "Lines": {
+            "140": 0,
+            "141": 0,
+            "142": 0
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModule.Infrastructure.EnquiryModuleRepo::.ctor(EnquiryModule.Models.EnquiryModuleContext)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Controllers\\EnquiryController.cs": {
+      "EnquiryModule.Controllers.EnquiryController": {
+        "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::CreateEnquiry(EnquiryModule.Models.Enquirer)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "24": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::GetEnquiryById(System.Int32)": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::UpdateEnquiry(EnquiryModule.Models.Enquirer)": {
+          "Lines": {
+            "33": 0,
+            "34": 0,
+            "35": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::GetDocumentById(System.Int32)": {
+          "Lines": {
+            "56": 0,
+            "57": 0,
+            "58": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::AssignManager(System.Int32)": {
+          "Lines": {
+            "87": 0,
+            "88": 0,
+            "89": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 EnquiryModule.Controllers.EnquiryController::GetAllEnquires()": {
+          "Lines": {
+            "92": 0,
+            "93": 0,
+            "94": 0
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModule.Controllers.EnquiryController::.ctor(EnquiryModule.Infrastructure.EnquiryModuleRepo)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      },
+      "EnquiryModule.Controllers.EnquiryController/<UpdateDocument>d__7": {
+        "System.Void EnquiryModule.Controllers.EnquiryController/<UpdateDocument>d__7::MoveNext()": {
+          "Lines": {
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "80": 0,
+            "82": 0,
+            "84": 0
+          },
+          "Branches": [
+            {
+              "Line": 63,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 21,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 34,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 61,
+              "EndOffset": 63,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 61,
+              "EndOffset": 85,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "EnquiryModule.Controllers.EnquiryController/<UploadDocument>d__5": {
+        "System.Void EnquiryModule.Controllers.EnquiryController/<UploadDocument>d__5::MoveNext()": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "48": 0,
+            "50": 0,
+            "52": 0
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 21,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 34,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 61,
+              "EndOffset": 63,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 61,
+              "EndOffset": 85,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

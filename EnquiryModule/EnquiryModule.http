@@ -1,0 +1,6 @@
+@EnquiryModule_HostAddress = http://localhost:5105
+
+GET {{EnquiryModule_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

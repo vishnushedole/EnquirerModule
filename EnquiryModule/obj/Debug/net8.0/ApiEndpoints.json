@@ -1,0 +1,184 @@
+[
+  {
+    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
+    "Method": "AssignManager",
+    "RelativePath": "api/Enquiry/AssignManager",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EnqId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
+    "Method": "CreateEnquiry",
+    "RelativePath": "api/Enquiry/CreateEnquiry",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enquirer",
+        "Type": "EnquiryModule.Models.Enquirer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
+    "Method": "GetAllEnquires",
+    "RelativePath": "api/Enquiry/GetAllEnquires",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
+    "Method": "GetDocumentById",
+    "RelativePath": "api/Enquiry/GetDocument",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DocId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
+    "Method": "GetEnquiryById",
+    "RelativePath": "api/Enquiry/GetEnquiry",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EnquiryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
+    "Method": "UpdateDocument",
+    "RelativePath": "api/Enquiry/UpdateDocument",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DocId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "EnqId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocTypeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Doc",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
+    "Method": "UpdateEnquiry",
+    "RelativePath": "api/Enquiry/UpdateEnquiry",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enquirer",
+        "Type": "EnquiryModule.Models.Enquirer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
+    "Method": "UploadDocument",
+    "RelativePath": "api/Enquiry/UploadDocument",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DocId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "EnqId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocTypeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Doc",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

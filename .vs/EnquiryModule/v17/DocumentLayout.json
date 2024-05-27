@@ -1,0 +1,270 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\controllers\\enquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\controllers\\enquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\infrastructure\\enquirymodulerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\infrastructure\\enquirymodulerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{019659CD-656D-4174-A83C-7D703CD24260}|EnquiryModuleTesting\\EnquiryModuleTesting.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymoduletesting\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{019659CD-656D-4174-A83C-7D703CD24260}|EnquiryModuleTesting\\EnquiryModuleTesting.csproj|solutionrelative:enquirymoduletesting\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\models\\enquirer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\models\\enquirer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\models\\doctype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\models\\doctype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\models\\documentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\models\\documentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\models\\enquirymodulecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\models\\enquirymodulecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\models\\mgrassignedenquire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\models\\mgrassignedenquire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\infrastructure\\ienquirymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\infrastructure\\ienquirymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|c:\\eurofins training\\consoleapp\\enquirymodule\\enquirymodule\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D999E6CE-BC63-4B17-94E9-7F3EE37719F7}|EnquiryModule\\EnquiryModule.csproj|solutionrelative:enquirymodule\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 441,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1363,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enquirer.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\Enquirer.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Models\\Enquirer.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\Enquirer.cs",
+              "RelativeToolTip": "EnquiryModule\\Models\\Enquirer.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAiwDIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T08:34:39.351Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MgrAssignedEnquire.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\MgrAssignedEnquire.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Models\\MgrAssignedEnquire.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\MgrAssignedEnquire.cs",
+              "RelativeToolTip": "EnquiryModule\\Models\\MgrAssignedEnquire.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T09:08:17.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\Manager.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Models\\Manager.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\Manager.cs",
+              "RelativeToolTip": "EnquiryModule\\Models\\Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T09:08:11.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnquiryModuleContext.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\EnquiryModuleContext.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Models\\EnquiryModuleContext.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\EnquiryModuleContext.cs",
+              "RelativeToolTip": "EnquiryModule\\Models\\EnquiryModuleContext.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T09:08:01.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Document.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Models\\Document.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\Document.cs",
+              "RelativeToolTip": "EnquiryModule\\Models\\Document.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T09:07:42.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DocType.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\DocType.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Models\\DocType.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\DocType.cs",
+              "RelativeToolTip": "EnquiryModule\\Models\\DocType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T09:07:33.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModuleTesting\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "EnquiryModuleTesting\\UnitTest1.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModuleTesting\\UnitTest1.cs",
+              "RelativeToolTip": "EnquiryModuleTesting\\UnitTest1.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowGIAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T08:28:00.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DocumentRequest.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\DocumentRequest.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Models\\DocumentRequest.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Models\\DocumentRequest.cs",
+              "RelativeToolTip": "EnquiryModule\\Models\\DocumentRequest.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T13:38:26.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\appsettings.json",
+              "RelativeDocumentMoniker": "EnquiryModule\\appsettings.json",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\appsettings.json",
+              "RelativeToolTip": "EnquiryModule\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-26T10:34:34.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Program.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Program.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Program.cs",
+              "RelativeToolTip": "EnquiryModule\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T10:10:35.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnquiryController.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Controllers\\EnquiryController.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Controllers\\EnquiryController.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Controllers\\EnquiryController.cs",
+              "RelativeToolTip": "EnquiryModule\\Controllers\\EnquiryController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA6wCQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T10:07:01.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnquiryModuleRepo.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Infrastructure\\EnquiryModuleRepo.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Infrastructure\\EnquiryModuleRepo.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Infrastructure\\EnquiryModuleRepo.cs",
+              "RelativeToolTip": "EnquiryModule\\Infrastructure\\EnquiryModuleRepo.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T09:48:00.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IEnquiryModule.cs",
+              "DocumentMoniker": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Infrastructure\\IEnquiryModule.cs",
+              "RelativeDocumentMoniker": "EnquiryModule\\Infrastructure\\IEnquiryModule.cs",
+              "ToolTip": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Infrastructure\\IEnquiryModule.cs",
+              "RelativeToolTip": "EnquiryModule\\Infrastructure\\IEnquiryModule.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwBIAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T09:43:44.037Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

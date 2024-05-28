@@ -7,11 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EnquiryModuleTesting
 {
-    public class DocumentResponse
-    {
-        public int DocId { get; set; }
-        public string UpdatedImage { get; set; }
-    }
+    
     [TestClass]
     public class UnitTest1
     {
@@ -38,6 +34,7 @@ namespace EnquiryModuleTesting
             // Arrange
             var enquirer = new Enquirer
             {
+                EnquiryId = 0,
                 Email = "test@example.com",
                 FirstName = "John",
                 LastName = "Doe",
@@ -87,7 +84,7 @@ namespace EnquiryModuleTesting
                 Age = 30,
                 Status = 1,
                 Dob = DateTime.Now.AddYears(-30),
-                EmployeeId = 1
+                EmployeeId = 2
             };
 
             // Act & Assert
@@ -116,7 +113,7 @@ namespace EnquiryModuleTesting
             var okResult = result as OkObjectResult;
             var returnedEnquirer = okResult.Value as Enquirer;
             Assert.IsNotNull(returnedEnquirer);
-            Assert.AreEqual("string", returnedEnquirer.Email);
+            Assert.AreEqual("new@example.com", returnedEnquirer.Email);
         }
         [TestMethod]
         public void GetEnquiryById_ReturnsNotFound_WithInvalidId()
@@ -296,7 +293,7 @@ namespace EnquiryModuleTesting
                 DocId = 2,
                 EnqId = 7,
                 CustId = 1,
-                Status = 1,
+                Status = 0,
                 DocTypeId = 1,
                 Doc = new FormFile(docStream, 0, docStream.Length, "Doc", "test.pdf")
             };
@@ -310,12 +307,12 @@ namespace EnquiryModuleTesting
             Assert.IsNotNull(okResult);
 
             // Assuming your controller returns an object of a known type, let's call it DocumentResponse
-            var resultValue = okResult.Value as DocumentResponse;
+            DocumentResponse resultValue = okResult.Value as DocumentResponse;
             Assert.IsNotNull(resultValue);
-            Assert.AreEqual(2, resultValue.DocId);
+            Assert.AreEqual(2, resultValue.docId);
 
             // Check if updated image URL is returned
-            var updatedImage = resultValue.UpdatedImage;
+            var updatedImage = resultValue.updatedImage;
             Assert.IsNotNull(updatedImage);
             Assert.IsTrue(updatedImage.StartsWith("data:image/jpeg;base64,"));
             // You can further validate the content of the updated image if needed
@@ -357,6 +354,15 @@ namespace EnquiryModuleTesting
 
             // Assert
             Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
+        }
+        [TestMethod]
+        public void GetAllEnquires()
+        {
+          
+            var result = _controller.GetAllEnquires();
+
+            // Assert
+            Assert.IsInstanceOfType(result,typeof(int));
         }
     }
 }

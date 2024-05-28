@@ -135,3 +135,4 @@ C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\obj\Debug\net8.0\Enq
 C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\obj\Debug\net8.0\EnquiryModule.genruntimeconfig.cache
 C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\obj\Debug\net8.0\ref\EnquiryModule.dll
 C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\bin\Debug\net8.0\coverage.json
+C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\obj\Debug\net8.0\EnquiryModule.sourcelink.json

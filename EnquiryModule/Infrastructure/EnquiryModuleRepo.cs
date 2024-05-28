@@ -137,11 +137,6 @@ namespace EnquiryModule.Infrastructure
                 _db.SaveChanges();
                 return leastLoadedManagerId.Value;
             }
-            else
-            {
-                throw new Exception("No available manager found to assign the enquiry.");
-               
-            }
             return -1;
         }
         public int GetAllEnquires()

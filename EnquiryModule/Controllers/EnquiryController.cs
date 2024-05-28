@@ -21,11 +21,12 @@ namespace EnquiryModule.Controllers
         {
             try
             {
+
                 if (enquirer is null)
                 {
                     return BadRequest("Enquiry data cannot be empty");
                 }
-                else if (GetEnquiryById(enquirer.EnquiryId) is null)
+                else if (_repo.GetEnquirer(enquirer.EnquiryId) is null)
                 {
                     return Ok(_repo.CreateEnquiry(enquirer));
                 }
@@ -110,11 +111,13 @@ namespace EnquiryModule.Controllers
                 document.Status = docModel.Status;
                 document.Doc = docData;
                 document.DocTypeId = docModel.DocTypeId;
-                var docId = _repo.UpdateDocument(document);
+                var doc = _repo.UpdateDocument(document);
 
                 var base64Image = Convert.ToBase64String(document.Doc);
-
-                return Ok(new { DocId = docId,UpdatedImage= "data:image/jpeg;base64," + base64Image });
+                DocumentResponse docRes = new DocumentResponse();
+                docRes.docId = doc.DocId;
+                docRes.updatedImage = "data:image/jpeg;base64," + base64Image;
+                return Ok(docRes);
             }
         }
         [HttpPost("AssignManager")]

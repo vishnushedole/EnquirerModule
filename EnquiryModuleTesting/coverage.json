@@ -57,6 +57,20 @@
           },
           "Branches": []
         }
+      },
+      "EnquiryModule.Models.DocumentResponse": {
+        "System.Int32 EnquiryModule.Models.DocumentResponse::get_docId()": {
+          "Lines": {
+            "24": 2
+          },
+          "Branches": []
+        },
+        "System.String EnquiryModule.Models.DocumentResponse::get_updatedImage()": {
+          "Lines": {
+            "25": 2
+          },
+          "Branches": []
+        }
       }
     },
     "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\Infrastructure\\EnquiryModuleRepo.cs": {
@@ -89,9 +103,9 @@
         },
         "EnquiryModule.Models.Enquirer EnquiryModule.Infrastructure.EnquiryModuleRepo::GetEnquirer(System.Int32)": {
           "Lines": {
-            "41": 4,
-            "42": 4,
-            "43": 4
+            "41": 6,
+            "42": 6,
+            "43": 6
           },
           "Branches": []
         },
@@ -248,18 +262,18 @@
         },
         "System.Int32 EnquiryModule.Infrastructure.EnquiryModuleRepo::GetAllEnquires()": {
           "Lines": {
-            "148": 4,
-            "149": 4,
-            "150": 4
+            "148": 5,
+            "149": 5,
+            "150": 5
           },
           "Branches": []
         },
         "System.Void EnquiryModule.Infrastructure.EnquiryModuleRepo::.ctor(EnquiryModule.Models.EnquiryModuleContext)": {
           "Lines": {
-            "10": 14,
-            "11": 14,
-            "12": 14,
-            "13": 14
+            "10": 15,
+            "11": 15,
+            "12": 15,
+            "13": 15
           },
           "Branches": []
         }
@@ -270,24 +284,68 @@
         "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::CreateEnquiry(EnquiryModule.Models.Enquirer)": {
           "Lines": {
             "21": 2,
-            "22": 2,
-            "24": 1
-          },
-          "Branches": []
-        },
-        "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::GetEnquiryById(System.Int32)": {
-          "Lines": {
-            "27": 2,
-            "28": 2,
+            "23": 2,
+            "25": 2,
+            "26": 0,
+            "27": 0,
             "29": 2,
-            "30": 1,
-            "31": 1,
-            "33": 1,
-            "34": 2
+            "30": 2,
+            "31": 2,
+            "34": 0,
+            "35": 0,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "43": 2
           },
           "Branches": [
             {
+              "Line": 25,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 8,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
               "Line": 29,
+              "Offset": 47,
+              "EndOffset": 49,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 29,
+              "Offset": 47,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::GetEnquiryById(System.Int32)": {
+          "Lines": {
+            "46": 2,
+            "47": 2,
+            "48": 2,
+            "49": 1,
+            "50": 1,
+            "52": 1,
+            "53": 2
+          },
+          "Branches": [
+            {
+              "Line": 48,
               "Offset": 20,
               "EndOffset": 22,
               "Path": 0,
@@ -295,7 +353,7 @@
               "Hits": 1
             },
             {
-              "Line": 29,
+              "Line": 48,
               "Offset": 20,
               "EndOffset": 32,
               "Path": 1,
@@ -306,28 +364,28 @@
         },
         "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::UpdateEnquiry(EnquiryModule.Models.Enquirer)": {
           "Lines": {
-            "38": 2,
-            "40": 2,
-            "42": 2,
-            "44": 1,
-            "45": 1,
-            "46": 1,
-            "48": 2
+            "57": 2,
+            "59": 2,
+            "61": 2,
+            "63": 1,
+            "64": 1,
+            "65": 1,
+            "67": 2
           },
           "Branches": []
         },
         "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::GetDocumentById(System.Int32)": {
           "Lines": {
-            "69": 2,
-            "70": 2,
-            "71": 2,
-            "72": 1,
-            "74": 1,
-            "75": 2
+            "88": 2,
+            "89": 2,
+            "90": 2,
+            "91": 1,
+            "93": 1,
+            "94": 2
           },
           "Branches": [
             {
-              "Line": 71,
+              "Line": 90,
               "Offset": 20,
               "EndOffset": 22,
               "Path": 0,
@@ -335,7 +393,7 @@
               "Hits": 1
             },
             {
-              "Line": 71,
+              "Line": 90,
               "Offset": 20,
               "EndOffset": 32,
               "Path": 1,
@@ -346,16 +404,16 @@
         },
         "Microsoft.AspNetCore.Mvc.IActionResult EnquiryModule.Controllers.EnquiryController::AssignManager(System.Int32)": {
           "Lines": {
-            "104": 2,
-            "105": 2,
-            "106": 2,
-            "107": 1,
-            "109": 1,
-            "110": 2
+            "125": 2,
+            "126": 2,
+            "127": 2,
+            "128": 1,
+            "130": 1,
+            "131": 2
           },
           "Branches": [
             {
-              "Line": 106,
+              "Line": 127,
               "Offset": 20,
               "EndOffset": 22,
               "Path": 0,
@@ -363,7 +421,7 @@
               "Hits": 1
             },
             {
-              "Line": 106,
+              "Line": 127,
               "Offset": 20,
               "EndOffset": 36,
               "Path": 1,
@@ -374,18 +432,18 @@
         },
         "System.Int32 EnquiryModule.Controllers.EnquiryController::GetAllEnquires()": {
           "Lines": {
-            "113": 4,
-            "114": 4,
-            "115": 4
+            "134": 5,
+            "135": 5,
+            "136": 5
           },
           "Branches": []
         },
         "System.Void EnquiryModule.Controllers.EnquiryController::.ctor(EnquiryModule.Infrastructure.EnquiryModuleRepo)": {
           "Lines": {
-            "14": 14,
-            "15": 14,
-            "16": 14,
-            "17": 14
+            "14": 15,
+            "15": 15,
+            "16": 15,
+            "17": 15
           },
           "Branches": []
         }
@@ -393,28 +451,31 @@
       "EnquiryModule.Controllers.EnquiryController/<UpdateDocument>d__7": {
         "System.Void EnquiryModule.Controllers.EnquiryController/<UpdateDocument>d__7::MoveNext()": {
           "Lines": {
-            "79": 2,
-            "80": 2,
-            "81": 1,
-            "83": 1,
-            "84": 1,
-            "85": 1,
-            "86": 1,
-            "88": 1,
-            "89": 1,
-            "90": 1,
-            "91": 1,
-            "92": 1,
-            "93": 1,
-            "94": 1,
-            "95": 1,
-            "97": 1,
-            "99": 1,
-            "101": 2
+            "98": 2,
+            "99": 2,
+            "100": 1,
+            "102": 1,
+            "103": 1,
+            "104": 1,
+            "105": 1,
+            "107": 1,
+            "108": 1,
+            "109": 1,
+            "110": 1,
+            "111": 1,
+            "112": 1,
+            "113": 1,
+            "114": 1,
+            "116": 1,
+            "117": 1,
+            "118": 1,
+            "119": 1,
+            "120": 1,
+            "122": 2
           },
           "Branches": [
             {
-              "Line": 80,
+              "Line": 99,
               "Offset": 21,
               "EndOffset": 23,
               "Path": 0,
@@ -422,7 +483,7 @@
               "Hits": 2
             },
             {
-              "Line": 80,
+              "Line": 99,
               "Offset": 34,
               "EndOffset": 36,
               "Path": 0,
@@ -430,7 +491,7 @@
               "Hits": 1
             },
             {
-              "Line": 80,
+              "Line": 99,
               "Offset": 21,
               "EndOffset": 58,
               "Path": 1,
@@ -438,7 +499,7 @@
               "Hits": 1
             },
             {
-              "Line": 80,
+              "Line": 99,
               "Offset": 34,
               "EndOffset": 58,
               "Path": 1,
@@ -446,7 +507,7 @@
               "Hits": 1
             },
             {
-              "Line": 80,
+              "Line": 99,
               "Offset": 61,
               "EndOffset": 63,
               "Path": 0,
@@ -454,7 +515,7 @@
               "Hits": 1
             },
             {
-              "Line": 80,
+              "Line": 99,
               "Offset": 61,
               "EndOffset": 85,
               "Path": 1,
@@ -467,20 +528,20 @@
       "EnquiryModule.Controllers.EnquiryController/<UploadDocument>d__5": {
         "System.Void EnquiryModule.Controllers.EnquiryController/<UploadDocument>d__5::MoveNext()": {
           "Lines": {
-            "51": 2,
-            "52": 2,
-            "53": 1,
-            "55": 1,
-            "56": 1,
-            "57": 1,
-            "58": 1,
-            "61": 1,
-            "63": 1,
-            "65": 2
+            "70": 2,
+            "71": 2,
+            "72": 1,
+            "74": 1,
+            "75": 1,
+            "76": 1,
+            "77": 1,
+            "80": 1,
+            "82": 1,
+            "84": 2
           },
           "Branches": [
             {
-              "Line": 52,
+              "Line": 71,
               "Offset": 21,
               "EndOffset": 23,
               "Path": 0,
@@ -488,7 +549,7 @@
               "Hits": 2
             },
             {
-              "Line": 52,
+              "Line": 71,
               "Offset": 34,
               "EndOffset": 36,
               "Path": 0,
@@ -496,7 +557,7 @@
               "Hits": 1
             },
             {
-              "Line": 52,
+              "Line": 71,
               "Offset": 21,
               "EndOffset": 58,
               "Path": 1,
@@ -504,7 +565,7 @@
               "Hits": 1
             },
             {
-              "Line": 52,
+              "Line": 71,
               "Offset": 34,
               "EndOffset": 58,
               "Path": 1,
@@ -512,7 +573,7 @@
               "Hits": 1
             },
             {
-              "Line": 52,
+              "Line": 71,
               "Offset": 61,
               "EndOffset": 63,
               "Path": 0,
@@ -520,11 +581,356 @@
               "Hits": 1
             },
             {
-              "Line": 52,
+              "Line": 71,
               "Offset": 61,
               "EndOffset": 85,
               "Path": 1,
               "Ordinal": 5,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "EnquiryModuleTesting.dll": {
+    "C:\\Users\\Vishnu Shedole\\.nuget\\packages\\microsoft.net.test.sdk\\17.8.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs": {
+      "AutoGeneratedProgram": {
+        "System.Void AutoGeneratedProgram::Main(System.String[])": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModuleTesting\\UnitTest1.cs": {
+      "EnquiryModuleTesting.UnitTest1": {
+        "System.Void EnquiryModuleTesting.UnitTest1::Setup()": {
+          "Lines": {
+            "19": 15,
+            "24": 15,
+            "25": 15,
+            "26": 15,
+            "29": 15
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::CreateEnquiry_ReturnsOkResult()": {
+          "Lines": {
+            "33": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "55": 1,
+            "57": 1,
+            "61": 1,
+            "62": 1,
+            "63": 1,
+            "64": 1,
+            "65": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::CreateEnquiry_ReturnsBadRequestOnException()": {
+          "Lines": {
+            "68": 1,
+            "70": 1,
+            "71": 1,
+            "72": 1,
+            "73": 1,
+            "74": 1,
+            "75": 1,
+            "76": 1,
+            "77": 1,
+            "78": 1,
+            "79": 1,
+            "80": 1,
+            "81": 1,
+            "82": 1,
+            "83": 1,
+            "84": 1,
+            "85": 1,
+            "86": 1,
+            "87": 1,
+            "88": 1,
+            "91": 1,
+            "95": 1,
+            "98": 1,
+            "100": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::GetEnquiryById_ReturnsOkResult_WithValidId()": {
+          "Lines": {
+            "103": 1,
+            "105": 1,
+            "109": 1,
+            "112": 1,
+            "113": 1,
+            "114": 1,
+            "115": 1,
+            "116": 1,
+            "117": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::GetEnquiryById_ReturnsNotFound_WithInvalidId()": {
+          "Lines": {
+            "120": 1,
+            "122": 1,
+            "126": 1,
+            "129": 1,
+            "130": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::UpdateEnquiry_ReturnsUpdatedEnquirer()": {
+          "Lines": {
+            "133": 1,
+            "135": 1,
+            "136": 1,
+            "137": 1,
+            "138": 1,
+            "139": 1,
+            "140": 1,
+            "141": 1,
+            "142": 1,
+            "143": 1,
+            "144": 1,
+            "145": 1,
+            "146": 1,
+            "147": 1,
+            "148": 1,
+            "149": 1,
+            "150": 1,
+            "151": 1,
+            "152": 1,
+            "153": 1,
+            "156": 1,
+            "159": 1,
+            "160": 1,
+            "161": 1,
+            "163": 1,
+            "164": 1,
+            "165": 1,
+            "166": 1,
+            "167": 1,
+            "168": 1,
+            "169": 1,
+            "170": 1,
+            "171": 1,
+            "172": 1,
+            "173": 1,
+            "174": 1,
+            "175": 1,
+            "176": 1,
+            "177": 1,
+            "178": 1,
+            "179": 1,
+            "180": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::UpdateEnquiry_ReturnsUpdatedEnquirerBadRequest()": {
+          "Lines": {
+            "183": 1,
+            "185": 1,
+            "186": 1,
+            "187": 1,
+            "188": 1,
+            "189": 1,
+            "190": 1,
+            "191": 1,
+            "192": 1,
+            "193": 1,
+            "194": 1,
+            "195": 1,
+            "196": 1,
+            "197": 1,
+            "198": 1,
+            "199": 1,
+            "200": 1,
+            "201": 1,
+            "202": 1,
+            "203": 1,
+            "206": 1,
+            "207": 1,
+            "208": 1,
+            "209": 1,
+            "212": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::GetDocumentById_ReturnsOk_ForValidDocumentId()": {
+          "Lines": {
+            "263": 1,
+            "265": 1,
+            "268": 1,
+            "269": 1,
+            "270": 1,
+            "271": 1,
+            "272": 1,
+            "273": 1,
+            "274": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::GetDocumentById_ReturnsNotFound_ForInvalidDocumentId()": {
+          "Lines": {
+            "278": 1,
+            "280": 1,
+            "283": 1,
+            "284": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::AssignManager_ReturnsOk_ForValidEnquiryId()": {
+          "Lines": {
+            "334": 1,
+            "336": 1,
+            "339": 1,
+            "342": 1,
+            "343": 1,
+            "344": 1,
+            "345": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::AssignManager_ReturnsNotFound_ForInvalidEnquiryId()": {
+          "Lines": {
+            "348": 1,
+            "350": 1,
+            "353": 1,
+            "356": 1,
+            "357": 1
+          },
+          "Branches": []
+        },
+        "System.Void EnquiryModuleTesting.UnitTest1::GetAllEnquires()": {
+          "Lines": {
+            "360": 1,
+            "362": 1,
+            "365": 1,
+            "366": 0
+          },
+          "Branches": []
+        }
+      },
+      "EnquiryModuleTesting.UnitTest1/<UpdateDocument_ReturnsBadRequest_ForInvalidDocumentRequest>d__14": {
+        "System.Void EnquiryModuleTesting.UnitTest1/<UpdateDocument_ReturnsBadRequest_ForInvalidDocumentRequest>d__14::MoveNext()": {
+          "Lines": {
+            "322": 1,
+            "324": 1,
+            "327": 1,
+            "330": 1,
+            "331": 1
+          },
+          "Branches": []
+        }
+      },
+      "EnquiryModuleTesting.UnitTest1/<UpdateDocument_ReturnsOk_ForValidDocumentRequest>d__13": {
+        "System.Void EnquiryModuleTesting.UnitTest1/<UpdateDocument_ReturnsOk_ForValidDocumentRequest>d__13::MoveNext()": {
+          "Lines": {
+            "287": 1,
+            "289": 1,
+            "290": 1,
+            "291": 1,
+            "292": 1,
+            "293": 1,
+            "294": 1,
+            "295": 1,
+            "296": 1,
+            "297": 1,
+            "298": 1,
+            "299": 1,
+            "302": 1,
+            "305": 1,
+            "306": 1,
+            "307": 1,
+            "310": 1,
+            "311": 1,
+            "312": 1,
+            "315": 1,
+            "316": 1,
+            "317": 1,
+            "319": 1
+          },
+          "Branches": []
+        }
+      },
+      "EnquiryModuleTesting.UnitTest1/<UploadDocument_ReturnsBadRequest_ForInvalidDocument>d__9": {
+        "System.Void EnquiryModuleTesting.UnitTest1/<UploadDocument_ReturnsBadRequest_ForInvalidDocument>d__9::MoveNext()": {
+          "Lines": {
+            "215": 1,
+            "217": 1,
+            "218": 1,
+            "219": 1,
+            "220": 1,
+            "223": 1,
+            "226": 1,
+            "227": 1,
+            "228": 1,
+            "229": 1,
+            "230": 1
+          },
+          "Branches": []
+        }
+      },
+      "EnquiryModuleTesting.UnitTest1/<UploadDocument_ReturnsOk_ForValidDocument>d__10": {
+        "System.Void EnquiryModuleTesting.UnitTest1/<UploadDocument_ReturnsOk_ForValidDocument>d__10::MoveNext()": {
+          "Lines": {
+            "234": 1,
+            "236": 1,
+            "237": 1,
+            "238": 1,
+            "239": 1,
+            "240": 1,
+            "241": 1,
+            "242": 1,
+            "243": 1,
+            "244": 1,
+            "245": 1,
+            "246": 1,
+            "251": 1,
+            "254": 1,
+            "255": 1,
+            "256": 1,
+            "257": 1,
+            "258": 1,
+            "260": 1
+          },
+          "Branches": [
+            {
+              "Line": 258,
+              "Offset": 359,
+              "EndOffset": 363,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 258,
+              "Offset": 359,
+              "EndOffset": 426,
+              "Path": 0,
+              "Ordinal": 0,
               "Hits": 1
             }
           ]

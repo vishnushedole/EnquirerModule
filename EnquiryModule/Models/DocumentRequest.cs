@@ -19,5 +19,9 @@ namespace EnquiryModule.Models
         public DocumentRequest DocModel { get; set; }
         public string ImageData { get; set; }
     }
-
+    public class DocumentResponse
+    {
+        public int docId { get; set; }
+        public string updatedImage { get; set; }
+    }
 }

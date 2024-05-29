@@ -41,10 +41,7 @@ namespace EnquiryModule.Infrastructure
         {
            return _db.Enquirers.FirstOrDefault(e=>e.EnquiryId == EnquiryId);
         }
-        public Manager GetManager(int? EmployeeId)
-        {
-            return _db.Managers.FirstOrDefault(e => e.EmpId == EmployeeId);
-        }
+      
 
 
         public Enquirer UpdateEnquirer(Enquirer enquirer)
@@ -108,13 +105,13 @@ namespace EnquiryModule.Infrastructure
             
             return document;
         }
-        public int? AssignManager(int EnqId)
+        public int? AssignManager(int EnquiryId)
         {
-            var enquiry = GetEnquirer(EnqId);
+            var enquiry = GetEnquirer(EnquiryId);
             if (enquiry == null)
                 return -1;
 
-            var MgrAssignEnq = _db.MgrAssignedEnquires.FirstOrDefault(e => e.EnquiryId == EnqId);
+            var MgrAssignEnq = _db.MgrAssignedEnquires.FirstOrDefault(e => e.EnquiryId == EnquiryId);
 
             if (MgrAssignEnq is not null)
                 return MgrAssignEnq.EmpId;
@@ -137,7 +134,7 @@ namespace EnquiryModule.Infrastructure
                 var newAssignment = new MgrAssignedEnquire
                 {
                     EmpId = leastLoadedManagerId.Value,
-                    EnquiryId = EnqId,
+                    EnquiryId = EnquiryId,
                     Isprocessed = false
                 };
 
@@ -150,6 +147,15 @@ namespace EnquiryModule.Infrastructure
         public int GetAllEnquires()
         {
             return _db.Enquirers.ToList().Count();
+        }
+        public bool checkManager(int? EnqId,int? EmpId)
+        {
+            var data = _db.MgrAssignedEnquires.FirstOrDefault(e => e.EnquiryId == EnqId && e.EmpId==EmpId);
+
+            if (data == null)
+                return false;
+
+            return true;
         }
     }
 }

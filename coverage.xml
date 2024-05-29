@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <results>
   <modules>
-    <module id="8837F553B5C22A49878691B7DE3CF82FB94ACE99" name="EnquiryModule.dll" path="EnquiryModule.dll" block_coverage="93.60" line_coverage="88.69" blocks_covered="600" blocks_not_covered="41" lines_covered="196" lines_partially_covered="0" lines_not_covered="25">
+    <module id="F2690D82BD93424688389AB40E19B1720EDEF59E" name="EnquiryModule.dll" path="EnquiryModule.dll" block_coverage="94.33" line_coverage="88.99" blocks_covered="616" blocks_not_covered="37" lines_covered="202" lines_partially_covered="0" lines_not_covered="25">
       <functions>
         <function id="8736" token="0x600000c" name="&lt;Main&gt;$(string[])" type_name="Program" block_coverage="0.00" line_coverage="0.00" blocks_covered="0" blocks_not_covered="25" lines_covered="0" lines_partially_covered="0" lines_not_covered="17">
           <ranges>
@@ -25,22 +25,22 @@
         </function>
         <function id="9332" token="0x6000035" name="get_DocModel()" namespace="EnquiryModule.Models" type_name="DocWithImageData" block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="1" start_line="19" end_line="19" start_column="43" end_column="47" covered="yes" />
+            <range source_id="1" start_line="19" end_line="19" start_column="44" end_column="48" covered="yes" />
           </ranges>
         </function>
         <function id="9340" token="0x6000036" name="set_DocModel(EnquiryModule.Models.DocumentRequest)" namespace="EnquiryModule.Models" type_name="DocWithImageData" block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="1" start_line="19" end_line="19" start_column="48" end_column="52" covered="yes" />
+            <range source_id="1" start_line="19" end_line="19" start_column="49" end_column="53" covered="yes" />
           </ranges>
         </function>
         <function id="9349" token="0x6000037" name="get_ImageData()" namespace="EnquiryModule.Models" type_name="DocWithImageData" block_coverage="0.00" line_coverage="0.00" blocks_covered="0" blocks_not_covered="1" lines_covered="0" lines_partially_covered="0" lines_not_covered="1">
           <ranges>
-            <range source_id="1" start_line="20" end_line="20" start_column="35" end_column="39" covered="no" />
+            <range source_id="1" start_line="20" end_line="20" start_column="36" end_column="40" covered="no" />
           </ranges>
         </function>
         <function id="9357" token="0x6000038" name="set_ImageData(string)" namespace="EnquiryModule.Models" type_name="DocWithImageData" block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="1" start_line="20" end_line="20" start_column="40" end_column="44" covered="yes" />
+            <range source_id="1" start_line="20" end_line="20" start_column="41" end_column="45" covered="yes" />
           </ranges>
         </function>
         <function id="9375" token="0x600003a" name="get_docId()" namespace="EnquiryModule.Models" type_name="DocumentResponse" block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0">
@@ -55,12 +55,12 @@
         </function>
         <function id="9392" token="0x600003c" name="get_updatedImage()" namespace="EnquiryModule.Models" type_name="DocumentResponse" block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="1" start_line="25" end_line="25" start_column="38" end_column="42" covered="yes" />
+            <range source_id="1" start_line="25" end_line="25" start_column="39" end_column="43" covered="yes" />
           </ranges>
         </function>
         <function id="9400" token="0x600003d" name="set_updatedImage(string)" namespace="EnquiryModule.Models" type_name="DocumentResponse" block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="1" start_line="25" end_line="25" start_column="43" end_column="47" covered="yes" />
+            <range source_id="1" start_line="25" end_line="25" start_column="44" end_column="48" covered="yes" />
           </ranges>
         </function>
         <function id="10614" token="0x600009c" name="EnquiryModuleRepo(EnquiryModule.Models.EnquiryModuleContext)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="2" blocks_not_covered="0" lines_covered="4" lines_partially_covered="0" lines_not_covered="0">
@@ -102,73 +102,76 @@
             <range source_id="2" start_line="43" end_line="43" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="10928" token="0x60000a0" name="GetManager(System.Nullable&lt;int&gt;)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="16" blocks_not_covered="0" lines_covered="3" lines_partially_covered="0" lines_not_covered="0">
+        <function id="10928" token="0x60000a0" name="UpdateEnquirer(EnquiryModule.Models.Enquirer)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="216" blocks_not_covered="0" lines_covered="23" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="2" start_line="45" end_line="45" start_column="9" end_column="10" covered="yes" />
-            <range source_id="2" start_line="46" end_line="46" start_column="13" end_column="76" covered="yes" />
-            <range source_id="2" start_line="47" end_line="47" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="48" end_line="48" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="49" end_line="67" start_column="13" end_column="15" covered="yes" />
+            <range source_id="2" start_line="68" end_line="68" start_column="13" end_column="31" covered="yes" />
+            <range source_id="2" start_line="69" end_line="69" start_column="13" end_column="29" covered="yes" />
+            <range source_id="2" start_line="70" end_line="70" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="11084" token="0x60000a1" name="UpdateEnquirer(EnquiryModule.Models.Enquirer)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="216" blocks_not_covered="0" lines_covered="23" lines_partially_covered="0" lines_not_covered="0">
+        <function id="13324" token="0x60000a1" name="GetDocument(int)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="31" blocks_not_covered="0" lines_covered="16" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="2" start_line="51" end_line="51" start_column="9" end_column="10" covered="yes" />
-            <range source_id="2" start_line="52" end_line="70" start_column="13" end_column="15" covered="yes" />
-            <range source_id="2" start_line="71" end_line="71" start_column="13" end_column="31" covered="yes" />
-            <range source_id="2" start_line="72" end_line="72" start_column="13" end_column="29" covered="yes" />
             <range source_id="2" start_line="73" end_line="73" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="74" end_line="74" start_column="14" end_column="79" covered="yes" />
+            <range source_id="2" start_line="75" end_line="75" start_column="13" end_column="33" covered="yes" />
+            <range source_id="2" start_line="76" end_line="76" start_column="13" end_column="14" covered="yes" />
+            <range source_id="2" start_line="77" end_line="77" start_column="17" end_column="29" covered="yes" />
+            <range source_id="2" start_line="79" end_line="85" start_column="13" end_column="15" covered="yes" />
+            <range source_id="2" start_line="87" end_line="87" start_column="13" end_column="50" covered="yes" />
+            <range source_id="2" start_line="88" end_line="88" start_column="13" end_column="65" covered="yes" />
+            <range source_id="2" start_line="89" end_line="89" start_column="13" end_column="118" covered="yes" />
+            <range source_id="2" start_line="90" end_line="90" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="13480" token="0x60000a2" name="GetDocument(int)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="31" blocks_not_covered="0" lines_covered="16" lines_partially_covered="0" lines_not_covered="0">
+        <function id="13592" token="0x60000a2" name="UpdateDocument(EnquiryModule.Models.Document)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="86" blocks_not_covered="0" lines_covered="13" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="2" start_line="76" end_line="76" start_column="9" end_column="10" covered="yes" />
-            <range source_id="2" start_line="77" end_line="77" start_column="14" end_column="79" covered="yes" />
-            <range source_id="2" start_line="78" end_line="78" start_column="13" end_column="33" covered="yes" />
-            <range source_id="2" start_line="79" end_line="79" start_column="13" end_column="14" covered="yes" />
-            <range source_id="2" start_line="80" end_line="80" start_column="17" end_column="29" covered="yes" />
-            <range source_id="2" start_line="82" end_line="88" start_column="13" end_column="15" covered="yes" />
-            <range source_id="2" start_line="90" end_line="90" start_column="13" end_column="50" covered="yes" />
-            <range source_id="2" start_line="91" end_line="91" start_column="13" end_column="65" covered="yes" />
-            <range source_id="2" start_line="92" end_line="92" start_column="13" end_column="118" covered="yes" />
             <range source_id="2" start_line="93" end_line="93" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="94" end_line="102" start_column="13" end_column="12" covered="yes" />
+            <range source_id="2" start_line="104" end_line="104" start_column="13" end_column="31" covered="yes" />
+            <range source_id="2" start_line="106" end_line="106" start_column="13" end_column="29" covered="yes" />
+            <range source_id="2" start_line="107" end_line="107" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="13748" token="0x60000a3" name="UpdateDocument(EnquiryModule.Models.Document)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="86" blocks_not_covered="0" lines_covered="13" lines_partially_covered="0" lines_not_covered="0">
+        <function id="14540" token="0x60000a3" name="AssignManager(int)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="97.59" line_coverage="96.77" blocks_covered="81" blocks_not_covered="2" lines_covered="30" lines_partially_covered="0" lines_not_covered="1">
           <ranges>
-            <range source_id="2" start_line="96" end_line="96" start_column="9" end_column="10" covered="yes" />
-            <range source_id="2" start_line="97" end_line="105" start_column="13" end_column="12" covered="yes" />
-            <range source_id="2" start_line="107" end_line="107" start_column="13" end_column="31" covered="yes" />
-            <range source_id="2" start_line="109" end_line="109" start_column="13" end_column="29" covered="yes" />
-            <range source_id="2" start_line="110" end_line="110" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="109" end_line="109" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="110" end_line="110" start_column="13" end_column="50" covered="yes" />
+            <range source_id="2" start_line="111" end_line="111" start_column="13" end_column="33" covered="yes" />
+            <range source_id="2" start_line="112" end_line="112" start_column="17" end_column="27" covered="yes" />
+            <range source_id="2" start_line="114" end_line="114" start_column="13" end_column="102" covered="yes" />
+            <range source_id="2" start_line="116" end_line="116" start_column="13" end_column="42" covered="yes" />
+            <range source_id="2" start_line="117" end_line="117" start_column="17" end_column="43" covered="yes" />
+            <range source_id="2" start_line="119" end_line="129" start_column="13" end_column="32" covered="yes" />
+            <range source_id="2" start_line="131" end_line="131" start_column="13" end_column="47" covered="yes" />
+            <range source_id="2" start_line="132" end_line="132" start_column="13" end_column="14" covered="yes" />
+            <range source_id="2" start_line="134" end_line="139" start_column="17" end_column="19" covered="yes" />
+            <range source_id="2" start_line="141" end_line="141" start_column="17" end_column="60" covered="yes" />
+            <range source_id="2" start_line="142" end_line="142" start_column="17" end_column="35" covered="yes" />
+            <range source_id="2" start_line="143" end_line="143" start_column="17" end_column="51" covered="yes" />
+            <range source_id="2" start_line="145" end_line="145" start_column="13" end_column="23" covered="no" />
+            <range source_id="2" start_line="146" end_line="146" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="14696" token="0x60000a4" name="AssignManager(int)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="97.59" line_coverage="96.77" blocks_covered="81" blocks_not_covered="2" lines_covered="30" lines_partially_covered="0" lines_not_covered="1">
+        <function id="15404" token="0x60000a4" name="GetAllEnquires()" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="5" blocks_not_covered="0" lines_covered="3" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="2" start_line="112" end_line="112" start_column="9" end_column="10" covered="yes" />
-            <range source_id="2" start_line="113" end_line="113" start_column="13" end_column="46" covered="yes" />
-            <range source_id="2" start_line="114" end_line="114" start_column="13" end_column="33" covered="yes" />
-            <range source_id="2" start_line="115" end_line="115" start_column="17" end_column="27" covered="yes" />
-            <range source_id="2" start_line="117" end_line="117" start_column="13" end_column="98" covered="yes" />
-            <range source_id="2" start_line="119" end_line="119" start_column="13" end_column="42" covered="yes" />
-            <range source_id="2" start_line="120" end_line="120" start_column="17" end_column="43" covered="yes" />
-            <range source_id="2" start_line="122" end_line="132" start_column="13" end_column="32" covered="yes" />
-            <range source_id="2" start_line="134" end_line="134" start_column="13" end_column="47" covered="yes" />
-            <range source_id="2" start_line="135" end_line="135" start_column="13" end_column="14" covered="yes" />
-            <range source_id="2" start_line="137" end_line="142" start_column="17" end_column="19" covered="yes" />
-            <range source_id="2" start_line="144" end_line="144" start_column="17" end_column="60" covered="yes" />
-            <range source_id="2" start_line="145" end_line="145" start_column="17" end_column="35" covered="yes" />
-            <range source_id="2" start_line="146" end_line="146" start_column="17" end_column="51" covered="yes" />
-            <range source_id="2" start_line="148" end_line="148" start_column="13" end_column="23" covered="no" />
-            <range source_id="2" start_line="149" end_line="149" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="148" end_line="148" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="149" end_line="149" start_column="13" end_column="51" covered="yes" />
+            <range source_id="2" start_line="150" end_line="150" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="15560" token="0x60000a5" name="GetAllEnquires()" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="5" blocks_not_covered="0" lines_covered="3" lines_partially_covered="0" lines_not_covered="0">
+        <function id="15444" token="0x60000a5" name="checkManager(System.Nullable&lt;int&gt;, System.Nullable&lt;int&gt;)" namespace="EnquiryModule.Infrastructure" type_name="EnquiryModuleRepo" block_coverage="100.00" line_coverage="100.00" blocks_covered="24" blocks_not_covered="0" lines_covered="6" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="2" start_line="151" end_line="151" start_column="9" end_column="10" covered="yes" />
-            <range source_id="2" start_line="152" end_line="152" start_column="13" end_column="51" covered="yes" />
-            <range source_id="2" start_line="153" end_line="153" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="152" end_line="152" start_column="9" end_column="10" covered="yes" />
+            <range source_id="2" start_line="153" end_line="153" start_column="13" end_column="108" covered="yes" />
+            <range source_id="2" start_line="155" end_line="155" start_column="13" end_column="30" covered="yes" />
+            <range source_id="2" start_line="156" end_line="156" start_column="17" end_column="30" covered="yes" />
+            <range source_id="2" start_line="158" end_line="158" start_column="13" end_column="25" covered="yes" />
+            <range source_id="2" start_line="159" end_line="159" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="15599" token="0x60000ad" name="EnquiryController(EnquiryModule.Infrastructure.EnquiryModuleRepo)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="2" blocks_not_covered="0" lines_covered="4" lines_partially_covered="0" lines_not_covered="0">
+        <function id="15670" token="0x60000ae" name="EnquiryController(EnquiryModule.Infrastructure.EnquiryModuleRepo)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="2" blocks_not_covered="0" lines_covered="4" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
             <range source_id="3" start_line="14" end_line="14" start_column="9" end_column="57" covered="yes" />
             <range source_id="3" start_line="15" end_line="15" start_column="9" end_column="10" covered="yes" />
@@ -176,128 +179,131 @@
             <range source_id="3" start_line="17" end_line="17" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="15616" token="0x60000ae" name="CreateEnquiry(EnquiryModule.Models.Enquirer)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="75.00" line_coverage="71.43" blocks_covered="12" blocks_not_covered="4" lines_covered="10" lines_partially_covered="0" lines_not_covered="4">
+        <function id="15688" token="0x60000af" name="CreateEnquiry(EnquiryModule.Models.Enquirer)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="76.19" line_coverage="70.59" blocks_covered="16" blocks_not_covered="5" lines_covered="12" lines_partially_covered="0" lines_not_covered="5">
           <ranges>
             <range source_id="3" start_line="21" end_line="21" start_column="9" end_column="10" covered="yes" />
             <range source_id="3" start_line="23" end_line="23" start_column="13" end_column="14" covered="yes" />
             <range source_id="3" start_line="25" end_line="25" start_column="17" end_column="38" covered="yes" />
-            <range source_id="3" start_line="26" end_line="26" start_column="17" end_column="18" covered="no" />
-            <range source_id="3" start_line="27" end_line="27" start_column="21" end_column="71" covered="no" />
-            <range source_id="3" start_line="29" end_line="29" start_column="22" end_column="72" covered="yes" />
+            <range source_id="3" start_line="26" end_line="26" start_column="17" end_column="18" covered="yes" />
+            <range source_id="3" start_line="27" end_line="27" start_column="21" end_column="71" covered="yes" />
+            <range source_id="3" start_line="29" end_line="29" start_column="22" end_column="51" covered="yes" />
             <range source_id="3" start_line="30" end_line="30" start_column="17" end_column="18" covered="yes" />
-            <range source_id="3" start_line="31" end_line="31" start_column="21" end_column="62" covered="yes" />
-            <range source_id="3" start_line="34" end_line="34" start_column="17" end_column="18" covered="no" />
-            <range source_id="3" start_line="35" end_line="35" start_column="21" end_column="64" covered="no" />
-            <range source_id="3" start_line="37" end_line="37" start_column="14" end_column="34" covered="yes" />
-            <range source_id="3" start_line="38" end_line="38" start_column="13" end_column="14" covered="yes" />
-            <range source_id="3" start_line="39" end_line="39" start_column="14" end_column="44" covered="yes" />
-            <range source_id="3" start_line="43" end_line="43" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="31" end_line="31" start_column="21" end_column="69" covered="yes" />
+            <range source_id="3" start_line="33" end_line="33" start_column="22" end_column="72" covered="yes" />
+            <range source_id="3" start_line="34" end_line="34" start_column="17" end_column="18" covered="yes" />
+            <range source_id="3" start_line="35" end_line="35" start_column="21" end_column="62" covered="yes" />
+            <range source_id="3" start_line="38" end_line="38" start_column="17" end_column="18" covered="no" />
+            <range source_id="3" start_line="39" end_line="39" start_column="21" end_column="64" covered="no" />
+            <range source_id="3" start_line="41" end_line="41" start_column="14" end_column="34" covered="no" />
+            <range source_id="3" start_line="42" end_line="42" start_column="13" end_column="14" covered="no" />
+            <range source_id="3" start_line="43" end_line="43" start_column="14" end_column="44" covered="no" />
+            <range source_id="3" start_line="47" end_line="47" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="15752" token="0x60000af" name="GetEnquiryById(int)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="7" blocks_not_covered="0" lines_covered="7" lines_partially_covered="0" lines_not_covered="0">
+        <function id="15860" token="0x60000b0" name="GetEnquiryById(int)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="7" blocks_not_covered="0" lines_covered="7" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="3" start_line="46" end_line="46" start_column="9" end_column="10" covered="yes" />
-            <range source_id="3" start_line="47" end_line="47" start_column="13" end_column="57" covered="yes" />
-            <range source_id="3" start_line="48" end_line="48" start_column="13" end_column="34" covered="yes" />
-            <range source_id="3" start_line="49" end_line="49" start_column="13" end_column="14" covered="yes" />
-            <range source_id="3" start_line="50" end_line="50" start_column="17" end_column="54" covered="yes" />
-            <range source_id="3" start_line="52" end_line="52" start_column="13" end_column="33" covered="yes" />
-            <range source_id="3" start_line="53" end_line="53" start_column="9" end_column="10" covered="yes" />
-          </ranges>
-        </function>
-        <function id="15816" token="0x60000b0" name="UpdateEnquiry(EnquiryModule.Models.Enquirer)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="79.17" line_coverage="91.67" blocks_covered="19" blocks_not_covered="5" lines_covered="11" lines_partially_covered="0" lines_not_covered="1">
-          <ranges>
+            <range source_id="3" start_line="50" end_line="50" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="51" end_line="51" start_column="13" end_column="57" covered="yes" />
+            <range source_id="3" start_line="52" end_line="52" start_column="13" end_column="34" covered="yes" />
+            <range source_id="3" start_line="53" end_line="53" start_column="13" end_column="14" covered="yes" />
+            <range source_id="3" start_line="54" end_line="54" start_column="17" end_column="54" covered="yes" />
+            <range source_id="3" start_line="56" end_line="56" start_column="13" end_column="33" covered="yes" />
             <range source_id="3" start_line="57" end_line="57" start_column="9" end_column="10" covered="yes" />
-            <range source_id="3" start_line="59" end_line="59" start_column="13" end_column="14" covered="yes" />
-            <range source_id="3" start_line="60" end_line="60" start_column="17" end_column="70" covered="yes" />
-            <range source_id="3" start_line="61" end_line="61" start_column="17" end_column="18" covered="yes" />
-            <range source_id="3" start_line="62" end_line="62" start_column="21" end_column="75" covered="yes" />
-            <range source_id="3" start_line="63" end_line="63" start_column="25" end_column="67" covered="yes" />
-            <range source_id="3" start_line="65" end_line="65" start_column="25" end_column="103" covered="yes" />
-            <range source_id="3" start_line="68" end_line="68" start_column="21" end_column="94" covered="no" />
-            <range source_id="3" start_line="71" end_line="71" start_column="13" end_column="33" covered="yes" />
-            <range source_id="3" start_line="72" end_line="72" start_column="13" end_column="14" covered="yes" />
-            <range source_id="3" start_line="73" end_line="73" start_column="17" end_column="47" covered="yes" />
-            <range source_id="3" start_line="75" end_line="75" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="16104" token="0x60000b2" name="GetDocumentById(int)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="7" blocks_not_covered="0" lines_covered="6" lines_partially_covered="0" lines_not_covered="0">
+        <function id="15924" token="0x60000b1" name="UpdateEnquiry(EnquiryModule.Models.Enquirer)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="23" blocks_not_covered="0" lines_covered="12" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="3" start_line="96" end_line="96" start_column="9" end_column="10" covered="yes" />
-            <range source_id="3" start_line="97" end_line="97" start_column="13" end_column="53" covered="yes" />
-            <range source_id="3" start_line="98" end_line="98" start_column="13" end_column="38" covered="yes" />
-            <range source_id="3" start_line="99" end_line="99" start_column="17" end_column="37" covered="yes" />
-            <range source_id="3" start_line="101" end_line="101" start_column="13" end_column="51" covered="yes" />
-            <range source_id="3" start_line="102" end_line="102" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="61" end_line="61" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="63" end_line="63" start_column="13" end_column="14" covered="yes" />
+            <range source_id="3" start_line="64" end_line="64" start_column="17" end_column="70" covered="yes" />
+            <range source_id="3" start_line="65" end_line="65" start_column="17" end_column="18" covered="yes" />
+            <range source_id="3" start_line="66" end_line="66" start_column="21" end_column="84" covered="yes" />
+            <range source_id="3" start_line="67" end_line="67" start_column="25" end_column="67" covered="yes" />
+            <range source_id="3" start_line="69" end_line="69" start_column="25" end_column="60" covered="yes" />
+            <range source_id="3" start_line="72" end_line="72" start_column="21" end_column="94" covered="yes" />
+            <range source_id="3" start_line="75" end_line="75" start_column="13" end_column="33" covered="yes" />
+            <range source_id="3" start_line="76" end_line="76" start_column="13" end_column="14" covered="yes" />
+            <range source_id="3" start_line="77" end_line="77" start_column="17" end_column="47" covered="yes" />
+            <range source_id="3" start_line="79" end_line="79" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="16240" token="0x60000b4" name="AssignManager(int)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="9" blocks_not_covered="0" lines_covered="6" lines_partially_covered="0" lines_not_covered="0">
+        <function id="16184" token="0x60000b3" name="GetDocumentById(int)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="7" blocks_not_covered="0" lines_covered="6" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="3" start_line="133" end_line="133" start_column="9" end_column="10" covered="yes" />
-            <range source_id="3" start_line="134" end_line="134" start_column="13" end_column="55" covered="yes" />
-            <range source_id="3" start_line="135" end_line="135" start_column="13" end_column="32" covered="yes" />
-            <range source_id="3" start_line="136" end_line="136" start_column="17" end_column="55" covered="yes" />
-            <range source_id="3" start_line="138" end_line="138" start_column="13" end_column="33" covered="yes" />
-            <range source_id="3" start_line="139" end_line="139" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="100" end_line="100" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="101" end_line="101" start_column="13" end_column="53" covered="yes" />
+            <range source_id="3" start_line="102" end_line="102" start_column="13" end_column="38" covered="yes" />
+            <range source_id="3" start_line="103" end_line="103" start_column="17" end_column="37" covered="yes" />
+            <range source_id="3" start_line="105" end_line="105" start_column="13" end_column="51" covered="yes" />
+            <range source_id="3" start_line="106" end_line="106" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="16328" token="0x60000b5" name="GetAllEnquires()" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="3" blocks_not_covered="0" lines_covered="3" lines_partially_covered="0" lines_not_covered="0">
+        <function id="16320" token="0x60000b5" name="AssignManager(int)" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="9" blocks_not_covered="0" lines_covered="6" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="3" start_line="142" end_line="142" start_column="9" end_column="10" covered="yes" />
-            <range source_id="3" start_line="143" end_line="143" start_column="13" end_column="43" covered="yes" />
-            <range source_id="3" start_line="144" end_line="144" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="137" end_line="137" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="138" end_line="138" start_column="13" end_column="55" covered="yes" />
+            <range source_id="3" start_line="139" end_line="139" start_column="13" end_column="32" covered="yes" />
+            <range source_id="3" start_line="140" end_line="140" start_column="17" end_column="55" covered="yes" />
+            <range source_id="3" start_line="142" end_line="142" start_column="13" end_column="33" covered="yes" />
+            <range source_id="3" start_line="143" end_line="143" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="16366" token="0x60000b7" name="&lt;&lt;Main&gt;$&gt;b__0(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)" type_name="Program.&lt;&gt;c__DisplayClass0_0" block_coverage="0.00" line_coverage="0.00" blocks_covered="0" blocks_not_covered="4" lines_covered="0" lines_partially_covered="0" lines_not_covered="1">
+        <function id="16408" token="0x60000b6" name="GetAllEnquires()" namespace="EnquiryModule.Controllers" type_name="EnquiryController" block_coverage="100.00" line_coverage="100.00" blocks_covered="3" blocks_not_covered="0" lines_covered="3" lines_partially_covered="0" lines_not_covered="0">
+          <ranges>
+            <range source_id="3" start_line="146" end_line="146" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="147" end_line="147" start_column="13" end_column="43" covered="yes" />
+            <range source_id="3" start_line="148" end_line="148" start_column="9" end_column="10" covered="yes" />
+          </ranges>
+        </function>
+        <function id="16446" token="0x60000b8" name="&lt;&lt;Main&gt;$&gt;b__0(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)" type_name="Program.&lt;&gt;c__DisplayClass0_0" block_coverage="0.00" line_coverage="0.00" blocks_covered="0" blocks_not_covered="4" lines_covered="0" lines_partially_covered="0" lines_not_covered="1">
           <ranges>
             <range source_id="0" start_line="12" end_line="12" start_column="5" end_column="163" covered="no" />
           </ranges>
         </function>
-        <function id="19944" token="0x60000c8" name="MoveNext()" namespace="EnquiryModule.Controllers" type_name="EnquiryController.&lt;UpdateDocument&gt;d__7" block_coverage="100.00" line_coverage="100.00" blocks_covered="41" blocks_not_covered="0" lines_covered="21" lines_partially_covered="0" lines_not_covered="0">
+        <function id="20024" token="0x60000c9" name="MoveNext()" namespace="EnquiryModule.Controllers" type_name="EnquiryController.&lt;UpdateDocument&gt;d__7" block_coverage="100.00" line_coverage="100.00" blocks_covered="41" blocks_not_covered="0" lines_covered="21" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="3" start_line="106" end_line="106" start_column="9" end_column="10" covered="yes" />
-            <range source_id="3" start_line="107" end_line="107" start_column="13" end_column="86" covered="yes" />
-            <range source_id="3" start_line="108" end_line="108" start_column="17" end_column="55" covered="yes" />
-            <range source_id="3" start_line="110" end_line="110" start_column="20" end_column="57" covered="yes" />
-            <range source_id="3" start_line="111" end_line="111" start_column="13" end_column="14" covered="yes" />
-            <range source_id="3" start_line="112" end_line="112" start_column="17" end_column="62" covered="yes" />
-            <range source_id="3" start_line="113" end_line="113" start_column="17" end_column="54" covered="yes" />
-            <range source_id="3" start_line="115" end_line="115" start_column="17" end_column="52" covered="yes" />
-            <range source_id="3" start_line="116" end_line="116" start_column="17" end_column="49" covered="yes" />
-            <range source_id="3" start_line="117" end_line="117" start_column="17" end_column="49" covered="yes" />
-            <range source_id="3" start_line="118" end_line="118" start_column="17" end_column="51" covered="yes" />
-            <range source_id="3" start_line="119" end_line="119" start_column="17" end_column="51" covered="yes" />
-            <range source_id="3" start_line="120" end_line="120" start_column="17" end_column="40" covered="yes" />
-            <range source_id="3" start_line="121" end_line="121" start_column="17" end_column="57" covered="yes" />
-            <range source_id="3" start_line="122" end_line="122" start_column="17" end_column="58" covered="yes" />
-            <range source_id="3" start_line="124" end_line="124" start_column="17" end_column="72" covered="yes" />
-            <range source_id="3" start_line="125" end_line="125" start_column="17" end_column="66" covered="yes" />
-            <range source_id="3" start_line="126" end_line="126" start_column="17" end_column="42" covered="yes" />
-            <range source_id="3" start_line="127" end_line="127" start_column="17" end_column="79" covered="yes" />
-            <range source_id="3" start_line="128" end_line="128" start_column="17" end_column="35" covered="yes" />
-            <range source_id="3" start_line="130" end_line="130" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="110" end_line="110" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="111" end_line="111" start_column="13" end_column="86" covered="yes" />
+            <range source_id="3" start_line="112" end_line="112" start_column="17" end_column="55" covered="yes" />
+            <range source_id="3" start_line="114" end_line="114" start_column="20" end_column="57" covered="yes" />
+            <range source_id="3" start_line="115" end_line="115" start_column="13" end_column="14" covered="yes" />
+            <range source_id="3" start_line="116" end_line="116" start_column="17" end_column="62" covered="yes" />
+            <range source_id="3" start_line="117" end_line="117" start_column="17" end_column="54" covered="yes" />
+            <range source_id="3" start_line="119" end_line="119" start_column="17" end_column="52" covered="yes" />
+            <range source_id="3" start_line="120" end_line="120" start_column="17" end_column="49" covered="yes" />
+            <range source_id="3" start_line="121" end_line="121" start_column="17" end_column="49" covered="yes" />
+            <range source_id="3" start_line="122" end_line="122" start_column="17" end_column="51" covered="yes" />
+            <range source_id="3" start_line="123" end_line="123" start_column="17" end_column="51" covered="yes" />
+            <range source_id="3" start_line="124" end_line="124" start_column="17" end_column="40" covered="yes" />
+            <range source_id="3" start_line="125" end_line="125" start_column="17" end_column="57" covered="yes" />
+            <range source_id="3" start_line="126" end_line="126" start_column="17" end_column="58" covered="yes" />
+            <range source_id="3" start_line="128" end_line="128" start_column="17" end_column="72" covered="yes" />
+            <range source_id="3" start_line="129" end_line="129" start_column="17" end_column="66" covered="yes" />
+            <range source_id="3" start_line="130" end_line="130" start_column="17" end_column="42" covered="yes" />
+            <range source_id="3" start_line="131" end_line="131" start_column="17" end_column="79" covered="yes" />
+            <range source_id="3" start_line="132" end_line="132" start_column="17" end_column="35" covered="yes" />
+            <range source_id="3" start_line="134" end_line="134" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="20620" token="0x60000cb" name="MoveNext()" namespace="EnquiryModule.Controllers" type_name="EnquiryController.&lt;UploadDocument&gt;d__5" block_coverage="100.00" line_coverage="100.00" blocks_covered="25" blocks_not_covered="0" lines_covered="10" lines_partially_covered="0" lines_not_covered="0">
+        <function id="20700" token="0x60000cc" name="MoveNext()" namespace="EnquiryModule.Controllers" type_name="EnquiryController.&lt;UploadDocument&gt;d__5" block_coverage="100.00" line_coverage="100.00" blocks_covered="25" blocks_not_covered="0" lines_covered="10" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="3" start_line="78" end_line="78" start_column="9" end_column="10" covered="yes" />
-            <range source_id="3" start_line="79" end_line="79" start_column="13" end_column="86" covered="yes" />
-            <range source_id="3" start_line="80" end_line="80" start_column="17" end_column="55" covered="yes" />
-            <range source_id="3" start_line="82" end_line="82" start_column="20" end_column="57" covered="yes" />
-            <range source_id="3" start_line="83" end_line="83" start_column="13" end_column="14" covered="yes" />
-            <range source_id="3" start_line="84" end_line="84" start_column="17" end_column="62" covered="yes" />
-            <range source_id="3" start_line="85" end_line="85" start_column="17" end_column="54" covered="yes" />
-            <range source_id="3" start_line="88" end_line="88" start_column="17" end_column="112" covered="yes" />
-            <range source_id="3" start_line="90" end_line="90" start_column="17" end_column="50" covered="yes" />
-            <range source_id="3" start_line="92" end_line="92" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="82" end_line="82" start_column="9" end_column="10" covered="yes" />
+            <range source_id="3" start_line="83" end_line="83" start_column="13" end_column="86" covered="yes" />
+            <range source_id="3" start_line="84" end_line="84" start_column="17" end_column="55" covered="yes" />
+            <range source_id="3" start_line="86" end_line="86" start_column="20" end_column="57" covered="yes" />
+            <range source_id="3" start_line="87" end_line="87" start_column="13" end_column="14" covered="yes" />
+            <range source_id="3" start_line="88" end_line="88" start_column="17" end_column="62" covered="yes" />
+            <range source_id="3" start_line="89" end_line="89" start_column="17" end_column="54" covered="yes" />
+            <range source_id="3" start_line="92" end_line="92" start_column="17" end_column="112" covered="yes" />
+            <range source_id="3" start_line="94" end_line="94" start_column="17" end_column="50" covered="yes" />
+            <range source_id="3" start_line="96" end_line="96" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
       </functions>
       <source_files>
         <source_file id="0" path="C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\Program.cs" checksum_type="SHA256" checksum="2B8F6F20FAEBB3778058354945AEBA7769F2E9235C86F796AAB011015CB6B490" />
-        <source_file id="1" path="C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\Models\DocumentRequest.cs" checksum_type="SHA256" checksum="30813B341694BA2C3D464177E4B9DE7AB0E583943036DDD45FBA6EEA109B2779" />
-        <source_file id="2" path="C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\Infrastructure\EnquiryModuleRepo.cs" checksum_type="SHA256" checksum="253AB570CAA4024D66F907E1DF8DD0B6D17BD1C728FF665548E988DEDA5A4D04" />
-        <source_file id="3" path="C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\Controllers\EnquiryController.cs" checksum_type="SHA256" checksum="8B3586D2CB712502BD910C38BA6213560929BBEAC5FE7736E18292313CF942AD" />
+        <source_file id="1" path="C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\Models\DocumentRequest.cs" checksum_type="SHA256" checksum="EB34047117E504A4F920FFE12162B9F2B1B4CD1680446A2E473EB3AF78DCBFD9" />
+        <source_file id="2" path="C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\Infrastructure\EnquiryModuleRepo.cs" checksum_type="SHA256" checksum="6E7A10A8E68C5C0FB5088754EE447F3A9E00B4FA58094159A6AE25C33CCAB525" />
+        <source_file id="3" path="C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModule\Controllers\EnquiryController.cs" checksum_type="SHA256" checksum="6224F1309A7FB08BA0C5FBBC05804F0BDF47E1AE5AC804DD146D9D1B79BED82F" />
       </source_files>
       <skipped_functions>
         <skipped_function id="8960" original_id="8960" token="0x600000e" name="get_DocType1()" type_name="DocType" reason="attribute_excluded" />
@@ -430,237 +436,291 @@
         <skipped_function id="10579" original_id="10579" token="0x6000098" name="set_Emp(EnquiryModule.Models.Manager)" type_name="MgrAssignedEnquire" reason="attribute_excluded" />
         <skipped_function id="10588" original_id="10588" token="0x6000099" name="get_Enquiry()" type_name="MgrAssignedEnquire" reason="attribute_excluded" />
         <skipped_function id="10596" original_id="10596" token="0x600009a" name="set_Enquiry(EnquiryModule.Models.Enquirer)" type_name="MgrAssignedEnquire" reason="attribute_excluded" />
-        <skipped_function id="16420" original_id="16420" token="0x60000ba" name="&lt;OnModelCreating&gt;b__23_0(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.DocType&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
-        <skipped_function id="16772" original_id="16772" token="0x60000bb" name="&lt;OnModelCreating&gt;b__23_1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.Document&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
-        <skipped_function id="17316" original_id="17316" token="0x60000bc" name="&lt;OnModelCreating&gt;b__23_2(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.Enquirer&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
-        <skipped_function id="18524" original_id="18524" token="0x60000bd" name="&lt;OnModelCreating&gt;b__23_3(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.Manager&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
-        <skipped_function id="19256" original_id="19256" token="0x60000be" name="&lt;OnModelCreating&gt;b__23_4(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.MgrAssignedEnquire&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
+        <skipped_function id="16500" original_id="16500" token="0x60000bb" name="&lt;OnModelCreating&gt;b__23_0(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.DocType&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
+        <skipped_function id="16852" original_id="16852" token="0x60000bc" name="&lt;OnModelCreating&gt;b__23_1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.Document&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
+        <skipped_function id="17396" original_id="17396" token="0x60000bd" name="&lt;OnModelCreating&gt;b__23_2(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.Enquirer&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
+        <skipped_function id="18604" original_id="18604" token="0x60000be" name="&lt;OnModelCreating&gt;b__23_3(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.Manager&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
+        <skipped_function id="19336" original_id="19336" token="0x60000bf" name="&lt;OnModelCreating&gt;b__23_4(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.MgrAssignedEnquire&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
       </skipped_functions>
     </module>
-    <module id="30E9F7846F4E4C4C82EF2CAAEBE4B7CE87554F87" name="EnquiryModuleTesting.dll" path="EnquiryModuleTesting.dll" block_coverage="99.67" line_coverage="99.61" blocks_covered="299" blocks_not_covered="1" lines_covered="255" lines_partially_covered="1" lines_not_covered="0">
+    <module id="3C6DFA61E62F3E47AF2E0B2A70982E6AFEDAFFDD" name="EnquiryModuleTesting.dll" path="EnquiryModuleTesting.dll" block_coverage="99.75" line_coverage="99.71" blocks_covered="404" blocks_not_covered="1" lines_covered="343" lines_partially_covered="1" lines_not_covered="0">
       <functions>
         <function id="8284" token="0x6000003" name="Setup()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="5" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="19" end_line="19" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="24" end_line="24" start_column="13" end_column="66" covered="yes" />
-            <range source_id="0" start_line="25" end_line="25" start_column="13" end_column="47" covered="yes" />
-            <range source_id="0" start_line="26" end_line="26" start_column="13" end_column="56" covered="yes" />
-            <range source_id="0" start_line="29" end_line="29" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="21" end_line="21" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="26" end_line="26" start_column="13" end_column="66" covered="yes" />
+            <range source_id="0" start_line="27" end_line="27" start_column="13" end_column="47" covered="yes" />
+            <range source_id="0" start_line="28" end_line="28" start_column="13" end_column="56" covered="yes" />
+            <range source_id="0" start_line="31" end_line="31" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="8336" token="0x6000004" name="CreateEnquiry_ReturnsOkResult()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="29" blocks_not_covered="0" lines_covered="27" lines_partially_covered="0" lines_not_covered="0">
+        <function id="8336" token="0x6000004" name="CreateEnquiry_ReturnsOkResult()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="28" blocks_not_covered="0" lines_covered="27" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="33" end_line="33" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="35" end_line="53" start_column="13" end_column="15" covered="yes" />
-            <range source_id="0" start_line="55" end_line="55" start_column="13" end_column="58" covered="yes" />
-            <range source_id="0" start_line="57" end_line="57" start_column="13" end_column="62" covered="yes" />
-            <range source_id="0" start_line="61" end_line="61" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="62" end_line="62" start_column="13" end_column="53" covered="yes" />
-            <range source_id="0" start_line="63" end_line="63" start_column="13" end_column="55" covered="yes" />
-            <range source_id="0" start_line="64" end_line="64" start_column="13" end_column="74" covered="yes" />
-            <range source_id="0" start_line="65" end_line="65" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="35" end_line="35" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="37" end_line="55" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="57" end_line="57" start_column="13" end_column="58" covered="yes" />
+            <range source_id="0" start_line="59" end_line="59" start_column="13" end_column="62" covered="yes" />
+            <range source_id="0" start_line="63" end_line="63" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="64" end_line="64" start_column="13" end_column="53" covered="yes" />
+            <range source_id="0" start_line="65" end_line="65" start_column="13" end_column="55" covered="yes" />
+            <range source_id="0" start_line="66" end_line="66" start_column="13" end_column="74" covered="yes" />
+            <range source_id="0" start_line="67" end_line="67" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="8632" token="0x6000005" name="CreateEnquiry_ReturnsBadRequestOnException()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="24" blocks_not_covered="0" lines_covered="24" lines_partially_covered="0" lines_not_covered="0">
+        <function id="8636" token="0x6000005" name="CreateEnquiry_ReturnsBadRequestOnException()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="24" blocks_not_covered="0" lines_covered="24" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="68" end_line="68" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="70" end_line="88" start_column="13" end_column="15" covered="yes" />
-            <range source_id="0" start_line="91" end_line="91" start_column="13" end_column="58" covered="yes" />
-            <range source_id="0" start_line="95" end_line="95" start_column="13" end_column="62" covered="yes" />
-            <range source_id="0" start_line="98" end_line="98" start_column="13" end_column="71" covered="yes" />
-            <range source_id="0" start_line="100" end_line="100" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="70" end_line="70" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="72" end_line="90" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="93" end_line="93" start_column="13" end_column="58" covered="yes" />
+            <range source_id="0" start_line="97" end_line="97" start_column="13" end_column="62" covered="yes" />
+            <range source_id="0" start_line="100" end_line="100" start_column="13" end_column="70" covered="yes" />
+            <range source_id="0" start_line="102" end_line="102" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="8876" token="0x6000006" name="GetEnquiryById_ReturnsOkResult_WithValidId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="8" blocks_not_covered="0" lines_covered="9" lines_partially_covered="0" lines_not_covered="0">
+        <function id="8880" token="0x6000006" name="CreateEnquiry_ForNullEnquiry()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="5" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="103" end_line="103" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="105" end_line="105" start_column="13" end_column="31" covered="yes" />
-            <range source_id="0" start_line="109" end_line="109" start_column="13" end_column="64" covered="yes" />
-            <range source_id="0" start_line="112" end_line="112" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="113" end_line="113" start_column="13" end_column="53" covered="yes" />
-            <range source_id="0" start_line="114" end_line="114" start_column="13" end_column="63" covered="yes" />
-            <range source_id="0" start_line="115" end_line="115" start_column="13" end_column="48" covered="yes" />
-            <range source_id="0" start_line="116" end_line="116" start_column="13" end_column="72" covered="yes" />
-            <range source_id="0" start_line="117" end_line="117" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="105" end_line="105" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="107" end_line="107" start_column="13" end_column="39" covered="yes" />
+            <range source_id="0" start_line="108" end_line="108" start_column="13" end_column="62" covered="yes" />
+            <range source_id="0" start_line="109" end_line="109" start_column="13" end_column="77" covered="yes" />
+            <range source_id="0" start_line="111" end_line="111" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="8968" token="0x6000007" name="GetEnquiryById_ReturnsNotFound_WithInvalidId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="5" lines_partially_covered="0" lines_not_covered="0">
+        <function id="8928" token="0x6000007" name="CreateEnquiry_ForExistingEnquiry()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="24" blocks_not_covered="0" lines_covered="23" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="120" end_line="120" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="122" end_line="122" start_column="13" end_column="31" covered="yes" />
-            <range source_id="0" start_line="126" end_line="126" start_column="13" end_column="64" covered="yes" />
-            <range source_id="0" start_line="129" end_line="129" start_column="13" end_column="75" covered="yes" />
-            <range source_id="0" start_line="130" end_line="130" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="114" end_line="114" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="116" end_line="134" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="137" end_line="137" start_column="13" end_column="62" covered="yes" />
+            <range source_id="0" start_line="141" end_line="141" start_column="13" end_column="77" covered="yes" />
+            <range source_id="0" start_line="143" end_line="143" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="9016" token="0x6000008" name="UpdateEnquiry_ReturnsUpdatedEnquirer()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="72" blocks_not_covered="0" lines_covered="42" lines_partially_covered="0" lines_not_covered="0">
+        <function id="9172" token="0x6000008" name="GetEnquiryById_ReturnsOkResult_WithValidId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="8" blocks_not_covered="0" lines_covered="9" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="133" end_line="133" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="135" end_line="153" start_column="13" end_column="15" covered="yes" />
-            <range source_id="0" start_line="156" end_line="156" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="159" end_line="159" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="160" end_line="160" start_column="13" end_column="53" covered="yes" />
-            <range source_id="0" start_line="161" end_line="161" start_column="13" end_column="40" covered="yes" />
-            <range source_id="0" start_line="163" end_line="163" start_column="13" end_column="63" covered="yes" />
-            <range source_id="0" start_line="164" end_line="164" start_column="13" end_column="48" covered="yes" />
-            <range source_id="0" start_line="165" end_line="165" start_column="13" end_column="76" covered="yes" />
-            <range source_id="0" start_line="166" end_line="166" start_column="13" end_column="84" covered="yes" />
-            <range source_id="0" start_line="167" end_line="167" start_column="13" end_column="82" covered="yes" />
-            <range source_id="0" start_line="168" end_line="168" start_column="13" end_column="74" covered="yes" />
-            <range source_id="0" start_line="169" end_line="169" start_column="13" end_column="80" covered="yes" />
-            <range source_id="0" start_line="170" end_line="170" start_column="13" end_column="74" covered="yes" />
-            <range source_id="0" start_line="171" end_line="171" start_column="13" end_column="74" covered="yes" />
-            <range source_id="0" start_line="172" end_line="172" start_column="13" end_column="80" covered="yes" />
-            <range source_id="0" start_line="173" end_line="173" start_column="13" end_column="80" covered="yes" />
-            <range source_id="0" start_line="174" end_line="174" start_column="13" end_column="92" covered="yes" />
-            <range source_id="0" start_line="175" end_line="175" start_column="13" end_column="78" covered="yes" />
-            <range source_id="0" start_line="176" end_line="176" start_column="13" end_column="72" covered="yes" />
-            <range source_id="0" start_line="177" end_line="177" start_column="13" end_column="78" covered="yes" />
-            <range source_id="0" start_line="178" end_line="178" start_column="13" end_column="72" covered="yes" />
-            <range source_id="0" start_line="179" end_line="179" start_column="13" end_column="86" covered="yes" />
-            <range source_id="0" start_line="180" end_line="180" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="146" end_line="146" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="148" end_line="148" start_column="13" end_column="31" covered="yes" />
+            <range source_id="0" start_line="152" end_line="152" start_column="13" end_column="64" covered="yes" />
+            <range source_id="0" start_line="155" end_line="155" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="156" end_line="156" start_column="13" end_column="53" covered="yes" />
+            <range source_id="0" start_line="157" end_line="157" start_column="13" end_column="63" covered="yes" />
+            <range source_id="0" start_line="158" end_line="158" start_column="13" end_column="48" covered="yes" />
+            <range source_id="0" start_line="159" end_line="159" start_column="13" end_column="72" covered="yes" />
+            <range source_id="0" start_line="160" end_line="160" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="9564" token="0x6000009" name="UpdateEnquiry_ReturnsUpdatedEnquirerBadRequest()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="25" blocks_not_covered="0" lines_covered="25" lines_partially_covered="0" lines_not_covered="0">
+        <function id="9264" token="0x6000009" name="GetEnquiryById_ReturnsNotFound_WithInvalidId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="5" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="183" end_line="183" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="185" end_line="203" start_column="13" end_column="15" covered="yes" />
-            <range source_id="0" start_line="206" end_line="206" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="207" end_line="207" start_column="13" end_column="77" covered="yes" />
-            <range source_id="0" start_line="208" end_line="208" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="209" end_line="209" start_column="13" end_column="48" covered="yes" />
-            <range source_id="0" start_line="212" end_line="212" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="163" end_line="163" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="165" end_line="165" start_column="13" end_column="31" covered="yes" />
+            <range source_id="0" start_line="169" end_line="169" start_column="13" end_column="64" covered="yes" />
+            <range source_id="0" start_line="172" end_line="172" start_column="13" end_column="75" covered="yes" />
+            <range source_id="0" start_line="173" end_line="173" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="9816" token="0x600000a" name="UpdateEnquiry_For_NotFoundRequest()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="25" blocks_not_covered="0" lines_covered="25" lines_partially_covered="0" lines_not_covered="0">
+        <function id="9312" token="0x600000a" name="UpdateEnquiry_ReturnsUpdatedEnquirer()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="72" blocks_not_covered="0" lines_covered="42" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="215" end_line="215" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="217" end_line="235" start_column="13" end_column="15" covered="yes" />
-            <range source_id="0" start_line="238" end_line="238" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="239" end_line="239" start_column="13" end_column="75" covered="yes" />
-            <range source_id="0" start_line="240" end_line="240" start_column="13" end_column="65" covered="yes" />
-            <range source_id="0" start_line="241" end_line="241" start_column="13" end_column="46" covered="yes" />
-            <range source_id="0" start_line="244" end_line="244" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="176" end_line="176" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="178" end_line="196" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="199" end_line="199" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="202" end_line="202" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="203" end_line="203" start_column="13" end_column="53" covered="yes" />
+            <range source_id="0" start_line="204" end_line="204" start_column="13" end_column="40" covered="yes" />
+            <range source_id="0" start_line="206" end_line="206" start_column="13" end_column="63" covered="yes" />
+            <range source_id="0" start_line="207" end_line="207" start_column="13" end_column="48" covered="yes" />
+            <range source_id="0" start_line="208" end_line="208" start_column="13" end_column="76" covered="yes" />
+            <range source_id="0" start_line="209" end_line="209" start_column="13" end_column="84" covered="yes" />
+            <range source_id="0" start_line="210" end_line="210" start_column="13" end_column="82" covered="yes" />
+            <range source_id="0" start_line="211" end_line="211" start_column="13" end_column="74" covered="yes" />
+            <range source_id="0" start_line="212" end_line="212" start_column="13" end_column="80" covered="yes" />
+            <range source_id="0" start_line="213" end_line="213" start_column="13" end_column="74" covered="yes" />
+            <range source_id="0" start_line="214" end_line="214" start_column="13" end_column="74" covered="yes" />
+            <range source_id="0" start_line="215" end_line="215" start_column="13" end_column="80" covered="yes" />
+            <range source_id="0" start_line="216" end_line="216" start_column="13" end_column="80" covered="yes" />
+            <range source_id="0" start_line="217" end_line="217" start_column="13" end_column="92" covered="yes" />
+            <range source_id="0" start_line="218" end_line="218" start_column="13" end_column="78" covered="yes" />
+            <range source_id="0" start_line="219" end_line="219" start_column="13" end_column="72" covered="yes" />
+            <range source_id="0" start_line="220" end_line="220" start_column="13" end_column="78" covered="yes" />
+            <range source_id="0" start_line="221" end_line="221" start_column="13" end_column="72" covered="yes" />
+            <range source_id="0" start_line="222" end_line="222" start_column="13" end_column="86" covered="yes" />
+            <range source_id="0" start_line="223" end_line="223" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="10208" token="0x600000d" name="GetDocumentById_ReturnsOk_ForValidDocumentId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="10" blocks_not_covered="0" lines_covered="9" lines_partially_covered="0" lines_not_covered="0">
+        <function id="9860" token="0x600000b" name="UpdateEnquiry_ReturnsUpdatedEnquirerBadRequest()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="25" blocks_not_covered="0" lines_covered="25" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="295" end_line="295" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="297" end_line="297" start_column="13" end_column="57" covered="yes" />
-            <range source_id="0" start_line="300" end_line="300" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="301" end_line="301" start_column="13" end_column="53" covered="yes" />
-            <range source_id="0" start_line="302" end_line="302" start_column="13" end_column="40" covered="yes" />
-            <range source_id="0" start_line="303" end_line="303" start_column="13" end_column="63" covered="yes" />
-            <range source_id="0" start_line="304" end_line="304" start_column="13" end_column="40" covered="yes" />
-            <range source_id="0" start_line="305" end_line="305" start_column="13" end_column="57" covered="yes" />
-            <range source_id="0" start_line="306" end_line="306" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="226" end_line="226" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="228" end_line="246" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="249" end_line="249" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="250" end_line="250" start_column="13" end_column="77" covered="yes" />
+            <range source_id="0" start_line="251" end_line="251" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="252" end_line="252" start_column="13" end_column="48" covered="yes" />
+            <range source_id="0" start_line="255" end_line="255" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="10304" token="0x600000e" name="GetDocumentById_ReturnsNotFound_ForInvalidDocumentId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="4" lines_partially_covered="0" lines_not_covered="0">
+        <function id="10112" token="0x600000c" name="UpdateEnquiry_For_NotFoundRequest()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="25" blocks_not_covered="0" lines_covered="25" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="310" end_line="310" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="312" end_line="312" start_column="13" end_column="58" covered="yes" />
-            <range source_id="0" start_line="315" end_line="315" start_column="13" end_column="75" covered="yes" />
-            <range source_id="0" start_line="316" end_line="316" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="258" end_line="258" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="260" end_line="278" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="281" end_line="281" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="282" end_line="282" start_column="13" end_column="75" covered="yes" />
+            <range source_id="0" start_line="283" end_line="283" start_column="13" end_column="65" covered="yes" />
+            <range source_id="0" start_line="284" end_line="284" start_column="13" end_column="46" covered="yes" />
+            <range source_id="0" start_line="287" end_line="287" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="10488" token="0x6000011" name="AssignManager_ReturnsOk_ForValidEnquiryId_AlreadyAssigned()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="5" blocks_not_covered="0" lines_covered="7" lines_partially_covered="0" lines_not_covered="0">
+        <function id="10368" token="0x600000d" name="UpdateEnquiry_For_NotFoundRequestInvalidEnquiryId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="25" blocks_not_covered="0" lines_covered="25" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="366" end_line="366" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="368" end_line="368" start_column="13" end_column="28" covered="yes" />
-            <range source_id="0" start_line="371" end_line="371" start_column="13" end_column="59" covered="yes" />
-            <range source_id="0" start_line="374" end_line="374" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="375" end_line="375" start_column="13" end_column="53" covered="yes" />
-            <range source_id="0" start_line="376" end_line="376" start_column="13" end_column="40" covered="yes" />
-            <range source_id="0" start_line="377" end_line="377" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="290" end_line="290" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="292" end_line="310" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="313" end_line="313" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="314" end_line="314" start_column="13" end_column="75" covered="yes" />
+            <range source_id="0" start_line="315" end_line="315" start_column="13" end_column="65" covered="yes" />
+            <range source_id="0" start_line="316" end_line="316" start_column="13" end_column="46" covered="yes" />
+            <range source_id="0" start_line="319" end_line="319" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="10552" token="0x6000012" name="AssignManager_ReturnsOk_ForValidEnquiryId_NewAssigned()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="5" blocks_not_covered="0" lines_covered="7" lines_partially_covered="0" lines_not_covered="0">
+        <function id="10760" token="0x6000010" name="GetDocumentById_ReturnsOk_ForValidDocumentId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="10" blocks_not_covered="0" lines_covered="9" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="380" end_line="380" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="382" end_line="382" start_column="13" end_column="28" covered="yes" />
-            <range source_id="0" start_line="385" end_line="385" start_column="13" end_column="59" covered="yes" />
-            <range source_id="0" start_line="388" end_line="388" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="389" end_line="389" start_column="13" end_column="53" covered="yes" />
-            <range source_id="0" start_line="390" end_line="390" start_column="13" end_column="40" covered="yes" />
+            <range source_id="0" start_line="370" end_line="370" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="372" end_line="372" start_column="13" end_column="57" covered="yes" />
+            <range source_id="0" start_line="375" end_line="375" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="376" end_line="376" start_column="13" end_column="53" covered="yes" />
+            <range source_id="0" start_line="377" end_line="377" start_column="13" end_column="40" covered="yes" />
+            <range source_id="0" start_line="378" end_line="378" start_column="13" end_column="63" covered="yes" />
+            <range source_id="0" start_line="379" end_line="379" start_column="13" end_column="40" covered="yes" />
+            <range source_id="0" start_line="380" end_line="380" start_column="13" end_column="57" covered="yes" />
+            <range source_id="0" start_line="381" end_line="381" start_column="9" end_column="10" covered="yes" />
+          </ranges>
+        </function>
+        <function id="10856" token="0x6000011" name="GetDocumentById_ReturnsNotFound_ForInvalidDocumentId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="4" lines_partially_covered="0" lines_not_covered="0">
+          <ranges>
+            <range source_id="0" start_line="385" end_line="385" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="387" end_line="387" start_column="13" end_column="58" covered="yes" />
+            <range source_id="0" start_line="390" end_line="390" start_column="13" end_column="75" covered="yes" />
             <range source_id="0" start_line="391" end_line="391" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="10616" token="0x6000013" name="AssignManager_ReturnsNotFound_ForInvalidEnquiryId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="5" lines_partially_covered="0" lines_not_covered="0">
+        <function id="11040" token="0x6000014" name="AssignManager_ReturnsOk_ForValidEnquiryId_AlreadyAssigned()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="5" blocks_not_covered="0" lines_covered="7" lines_partially_covered="0" lines_not_covered="0">
+          <ranges>
+            <range source_id="0" start_line="441" end_line="441" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="443" end_line="443" start_column="13" end_column="28" covered="yes" />
+            <range source_id="0" start_line="446" end_line="446" start_column="13" end_column="59" covered="yes" />
+            <range source_id="0" start_line="449" end_line="449" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="450" end_line="450" start_column="13" end_column="53" covered="yes" />
+            <range source_id="0" start_line="451" end_line="451" start_column="13" end_column="40" covered="yes" />
+            <range source_id="0" start_line="452" end_line="452" start_column="9" end_column="10" covered="yes" />
+          </ranges>
+        </function>
+        <function id="11104" token="0x6000015" name="AssignManager_ReturnsOk_ForValidEnquiryId_NewAssigned()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="5" blocks_not_covered="0" lines_covered="7" lines_partially_covered="0" lines_not_covered="0">
+          <ranges>
+            <range source_id="0" start_line="455" end_line="455" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="457" end_line="457" start_column="13" end_column="28" covered="yes" />
+            <range source_id="0" start_line="460" end_line="460" start_column="13" end_column="59" covered="yes" />
+            <range source_id="0" start_line="463" end_line="463" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="464" end_line="464" start_column="13" end_column="53" covered="yes" />
+            <range source_id="0" start_line="465" end_line="465" start_column="13" end_column="40" covered="yes" />
+            <range source_id="0" start_line="466" end_line="466" start_column="9" end_column="10" covered="yes" />
+          </ranges>
+        </function>
+        <function id="11168" token="0x6000016" name="AssignManager_ReturnsNotFound_ForInvalidEnquiryId()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="5" lines_partially_covered="0" lines_not_covered="0">
+          <ranges>
+            <range source_id="0" start_line="469" end_line="469" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="471" end_line="471" start_column="13" end_column="28" covered="yes" />
+            <range source_id="0" start_line="474" end_line="474" start_column="13" end_column="59" covered="yes" />
+            <range source_id="0" start_line="477" end_line="477" start_column="13" end_column="75" covered="yes" />
+            <range source_id="0" start_line="478" end_line="478" start_column="9" end_column="10" covered="yes" />
+          </ranges>
+        </function>
+        <function id="11216" token="0x6000017" name="GetAllEnquires()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="4" lines_partially_covered="0" lines_not_covered="0">
+          <ranges>
+            <range source_id="0" start_line="481" end_line="481" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="483" end_line="483" start_column="13" end_column="55" covered="yes" />
+            <range source_id="0" start_line="486" end_line="486" start_column="13" end_column="58" covered="yes" />
+            <range source_id="0" start_line="487" end_line="487" start_column="9" end_column="10" covered="yes" />
+          </ranges>
+        </function>
+        <function id="11264" token="0x6000018" name="CreateEnquiry_Returns_BadRequest_When_EnquiryDataIsNull()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="5" blocks_not_covered="0" lines_covered="6" lines_partially_covered="0" lines_not_covered="0">
+          <ranges>
+            <range source_id="0" start_line="493" end_line="493" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="495" end_line="495" start_column="13" end_column="38" covered="yes" />
+            <range source_id="0" start_line="498" end_line="498" start_column="13" end_column="88" covered="yes" />
+            <range source_id="0" start_line="501" end_line="501" start_column="13" end_column="38" covered="yes" />
+            <range source_id="0" start_line="502" end_line="502" start_column="13" end_column="75" covered="yes" />
+            <range source_id="0" start_line="503" end_line="503" start_column="9" end_column="10" covered="yes" />
+          </ranges>
+        </function>
+        <function id="11324" token="0x6000019" name="UpdateEnquiry_ReturnsNotFound_WhenEnquiryDoesNotExist()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="48" blocks_not_covered="0" lines_covered="29" lines_partially_covered="0" lines_not_covered="0">
+          <ranges>
+            <range source_id="0" start_line="509" end_line="509" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="511" end_line="529" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="532" end_line="532" start_column="13" end_column="55" covered="yes" />
+            <range source_id="0" start_line="533" end_line="533" start_column="13" end_column="98" covered="yes" />
+            <range source_id="0" start_line="534" end_line="534" start_column="13" end_column="66" covered="yes" />
+            <range source_id="0" start_line="537" end_line="537" start_column="13" end_column="62" covered="yes" />
+            <range source_id="0" start_line="540" end_line="540" start_column="13" end_column="75" covered="yes" />
+            <range source_id="0" start_line="541" end_line="541" start_column="13" end_column="65" covered="yes" />
+            <range source_id="0" start_line="542" end_line="542" start_column="13" end_column="46" covered="yes" />
+            <range source_id="0" start_line="543" end_line="543" start_column="13" end_column="107" covered="yes" />
+            <range source_id="0" start_line="544" end_line="544" start_column="9" end_column="10" covered="yes" />
+          </ranges>
+        </function>
+        <function id="11860" token="0x600001d" name="MoveNext()" namespace="EnquiryModuleTesting" type_name="UnitTest1.&lt;UpdateDocument_ReturnsBadRequest_ForInvalidDocumentRequest&gt;d__18" block_coverage="100.00" line_coverage="100.00" blocks_covered="8" blocks_not_covered="0" lines_covered="5" lines_partially_covered="0" lines_not_covered="0">
+          <ranges>
+            <range source_id="0" start_line="429" end_line="429" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="431" end_line="431" start_column="13" end_column="61" covered="yes" />
+            <range source_id="0" start_line="434" end_line="434" start_column="13" end_column="78" covered="yes" />
+            <range source_id="0" start_line="437" end_line="437" start_column="13" end_column="77" covered="yes" />
+            <range source_id="0" start_line="438" end_line="438" start_column="9" end_column="10" covered="yes" />
+          </ranges>
+        </function>
+        <function id="12160" token="0x6000020" name="MoveNext()" namespace="EnquiryModuleTesting" type_name="UnitTest1.&lt;UpdateDocument_ReturnsOk_ForValidDocumentRequest&gt;d__17" block_coverage="100.00" line_coverage="100.00" blocks_covered="27" blocks_not_covered="0" lines_covered="23" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
             <range source_id="0" start_line="394" end_line="394" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="396" end_line="396" start_column="13" end_column="28" covered="yes" />
-            <range source_id="0" start_line="399" end_line="399" start_column="13" end_column="59" covered="yes" />
-            <range source_id="0" start_line="402" end_line="402" start_column="13" end_column="75" covered="yes" />
-            <range source_id="0" start_line="403" end_line="403" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="396" end_line="396" start_column="13" end_column="59" covered="yes" />
+            <range source_id="0" start_line="397" end_line="397" start_column="13" end_column="58" covered="yes" />
+            <range source_id="0" start_line="398" end_line="406" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="409" end_line="409" start_column="13" end_column="71" covered="yes" />
+            <range source_id="0" start_line="412" end_line="412" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="413" end_line="413" start_column="13" end_column="53" covered="yes" />
+            <range source_id="0" start_line="414" end_line="414" start_column="13" end_column="40" covered="yes" />
+            <range source_id="0" start_line="417" end_line="417" start_column="13" end_column="79" covered="yes" />
+            <range source_id="0" start_line="418" end_line="418" start_column="13" end_column="43" covered="yes" />
+            <range source_id="0" start_line="419" end_line="419" start_column="13" end_column="51" covered="yes" />
+            <range source_id="0" start_line="422" end_line="422" start_column="13" end_column="57" covered="yes" />
+            <range source_id="0" start_line="423" end_line="423" start_column="13" end_column="44" covered="yes" />
+            <range source_id="0" start_line="424" end_line="424" start_column="13" end_column="79" covered="yes" />
+            <range source_id="0" start_line="426" end_line="426" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="10664" token="0x6000014" name="GetAllEnquires()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="4" lines_partially_covered="0" lines_not_covered="0">
+        <function id="12800" token="0x6000023" name="MoveNext()" namespace="EnquiryModuleTesting" type_name="UnitTest1.&lt;UploadDocument_ReturnsBadRequest_ForInvalidDocument&gt;d__13" block_coverage="100.00" line_coverage="100.00" blocks_covered="12" blocks_not_covered="0" lines_covered="11" lines_partially_covered="0" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="406" end_line="406" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="408" end_line="408" start_column="13" end_column="55" covered="yes" />
-            <range source_id="0" start_line="411" end_line="411" start_column="13" end_column="57" covered="yes" />
-            <range source_id="0" start_line="412" end_line="412" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="322" end_line="322" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="324" end_line="327" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="330" end_line="330" start_column="13" end_column="71" covered="yes" />
+            <range source_id="0" start_line="333" end_line="333" start_column="13" end_column="77" covered="yes" />
+            <range source_id="0" start_line="334" end_line="334" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="335" end_line="335" start_column="13" end_column="48" covered="yes" />
+            <range source_id="0" start_line="336" end_line="336" start_column="13" end_column="73" covered="yes" />
+            <range source_id="0" start_line="337" end_line="337" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
-        <function id="10732" token="0x6000017" name="MoveNext()" namespace="EnquiryModuleTesting" type_name="UnitTest1.&lt;UpdateDocument_ReturnsBadRequest_ForInvalidDocumentRequest&gt;d__15" block_coverage="100.00" line_coverage="100.00" blocks_covered="8" blocks_not_covered="0" lines_covered="5" lines_partially_covered="0" lines_not_covered="0">
+        <function id="13172" token="0x6000026" name="MoveNext()" namespace="EnquiryModuleTesting" type_name="UnitTest1.&lt;UploadDocument_ReturnsOk_ForValidDocument&gt;d__14" block_coverage="96.67" line_coverage="94.74" blocks_covered="29" blocks_not_covered="1" lines_covered="18" lines_partially_covered="1" lines_not_covered="0">
           <ranges>
-            <range source_id="0" start_line="354" end_line="354" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="356" end_line="356" start_column="13" end_column="61" covered="yes" />
-            <range source_id="0" start_line="359" end_line="359" start_column="13" end_column="78" covered="yes" />
-            <range source_id="0" start_line="362" end_line="362" start_column="13" end_column="77" covered="yes" />
-            <range source_id="0" start_line="363" end_line="363" start_column="9" end_column="10" covered="yes" />
-          </ranges>
-        </function>
-        <function id="11032" token="0x600001a" name="MoveNext()" namespace="EnquiryModuleTesting" type_name="UnitTest1.&lt;UpdateDocument_ReturnsOk_ForValidDocumentRequest&gt;d__14" block_coverage="100.00" line_coverage="100.00" blocks_covered="27" blocks_not_covered="0" lines_covered="23" lines_partially_covered="0" lines_not_covered="0">
-          <ranges>
-            <range source_id="0" start_line="319" end_line="319" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="321" end_line="321" start_column="13" end_column="59" covered="yes" />
-            <range source_id="0" start_line="322" end_line="322" start_column="13" end_column="58" covered="yes" />
-            <range source_id="0" start_line="323" end_line="331" start_column="13" end_column="15" covered="yes" />
-            <range source_id="0" start_line="334" end_line="334" start_column="13" end_column="71" covered="yes" />
-            <range source_id="0" start_line="337" end_line="337" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="338" end_line="338" start_column="13" end_column="53" covered="yes" />
-            <range source_id="0" start_line="339" end_line="339" start_column="13" end_column="40" covered="yes" />
-            <range source_id="0" start_line="342" end_line="342" start_column="13" end_column="79" covered="yes" />
-            <range source_id="0" start_line="343" end_line="343" start_column="13" end_column="43" covered="yes" />
-            <range source_id="0" start_line="344" end_line="344" start_column="13" end_column="51" covered="yes" />
-            <range source_id="0" start_line="347" end_line="347" start_column="13" end_column="57" covered="yes" />
-            <range source_id="0" start_line="348" end_line="348" start_column="13" end_column="44" covered="yes" />
-            <range source_id="0" start_line="349" end_line="349" start_column="13" end_column="79" covered="yes" />
-            <range source_id="0" start_line="351" end_line="351" start_column="9" end_column="10" covered="yes" />
-          </ranges>
-        </function>
-        <function id="11672" token="0x600001d" name="MoveNext()" namespace="EnquiryModuleTesting" type_name="UnitTest1.&lt;UploadDocument_ReturnsBadRequest_ForInvalidDocument&gt;d__10" block_coverage="100.00" line_coverage="100.00" blocks_covered="12" blocks_not_covered="0" lines_covered="11" lines_partially_covered="0" lines_not_covered="0">
-          <ranges>
-            <range source_id="0" start_line="247" end_line="247" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="249" end_line="252" start_column="13" end_column="15" covered="yes" />
-            <range source_id="0" start_line="255" end_line="255" start_column="13" end_column="71" covered="yes" />
-            <range source_id="0" start_line="258" end_line="258" start_column="13" end_column="77" covered="yes" />
-            <range source_id="0" start_line="259" end_line="259" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="260" end_line="260" start_column="13" end_column="48" covered="yes" />
-            <range source_id="0" start_line="261" end_line="261" start_column="13" end_column="73" covered="yes" />
-            <range source_id="0" start_line="262" end_line="262" start_column="9" end_column="10" covered="yes" />
-          </ranges>
-        </function>
-        <function id="12044" token="0x6000020" name="MoveNext()" namespace="EnquiryModuleTesting" type_name="UnitTest1.&lt;UploadDocument_ReturnsOk_ForValidDocument&gt;d__11" block_coverage="96.67" line_coverage="94.74" blocks_covered="29" blocks_not_covered="1" lines_covered="18" lines_partially_covered="1" lines_not_covered="0">
-          <ranges>
-            <range source_id="0" start_line="266" end_line="266" start_column="9" end_column="10" covered="yes" />
-            <range source_id="0" start_line="268" end_line="268" start_column="13" end_column="59" covered="yes" />
-            <range source_id="0" start_line="269" end_line="269" start_column="13" end_column="58" covered="yes" />
-            <range source_id="0" start_line="270" end_line="278" start_column="13" end_column="15" covered="yes" />
-            <range source_id="0" start_line="283" end_line="283" start_column="13" end_column="71" covered="yes" />
-            <range source_id="0" start_line="286" end_line="286" start_column="13" end_column="69" covered="yes" />
-            <range source_id="0" start_line="287" end_line="287" start_column="13" end_column="53" covered="yes" />
-            <range source_id="0" start_line="288" end_line="288" start_column="13" end_column="40" covered="yes" />
-            <range source_id="0" start_line="289" end_line="289" start_column="13" end_column="57" covered="yes" />
-            <range source_id="0" start_line="290" end_line="290" start_column="13" end_column="43" covered="partial" />
-            <range source_id="0" start_line="292" end_line="292" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="341" end_line="341" start_column="9" end_column="10" covered="yes" />
+            <range source_id="0" start_line="343" end_line="343" start_column="13" end_column="59" covered="yes" />
+            <range source_id="0" start_line="344" end_line="344" start_column="13" end_column="58" covered="yes" />
+            <range source_id="0" start_line="345" end_line="353" start_column="13" end_column="15" covered="yes" />
+            <range source_id="0" start_line="358" end_line="358" start_column="13" end_column="71" covered="yes" />
+            <range source_id="0" start_line="361" end_line="361" start_column="13" end_column="69" covered="yes" />
+            <range source_id="0" start_line="362" end_line="362" start_column="13" end_column="53" covered="yes" />
+            <range source_id="0" start_line="363" end_line="363" start_column="13" end_column="40" covered="yes" />
+            <range source_id="0" start_line="364" end_line="364" start_column="13" end_column="57" covered="yes" />
+            <range source_id="0" start_line="365" end_line="365" start_column="13" end_column="43" covered="partial" />
+            <range source_id="0" start_line="367" end_line="367" start_column="9" end_column="10" covered="yes" />
           </ranges>
         </function>
       </functions>
       <source_files>
-        <source_file id="0" path="C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModuleTesting\UnitTest1.cs" checksum_type="SHA256" checksum="0E04FE326BBF79E390680460204725019B0B311504864E099446D981E13474AB" />
+        <source_file id="0" path="C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModuleTesting\UnitTest1.cs" checksum_type="SHA256" checksum="88D51F921FC36226A822CC8052373F5E46091330FEE1965701AC8ED6D8068C52" />
       </source_files>
       <skipped_functions>
         <skipped_function id="8272" original_id="8272" token="0x6000001" name="Main(string[])" type_name="AutoGeneratedProgram" reason="attribute_excluded" />
@@ -671,8 +731,8 @@
     <skipped_module name="microsoft.extensions.logging.abstractions.dll" path="microsoft.extensions.logging.abstractions.dll" reason="no_symbols" />
     <skipped_module name="system.runtime.serialization.formatters.dll" path="system.runtime.serialization.formatters.dll" reason="no_symbols" />
     <skipped_module name="system.private.xml.dll" path="system.private.xml.dll" reason="no_symbols" />
-    <skipped_module name="system.runtime.serialization.json.dll" path="system.runtime.serialization.json.dll" reason="no_symbols" />
     <skipped_module name="nuget.librarymodel.dll" path="nuget.librarymodel.dll" reason="no_symbols" />
+    <skipped_module name="system.runtime.serialization.json.dll" path="system.runtime.serialization.json.dll" reason="no_symbols" />
     <skipped_module name="system.memory.dll" path="system.memory.dll" reason="no_symbols" />
     <skipped_module name="microsoft.deployment.dotnet.releases.dll" path="microsoft.deployment.dotnet.releases.dll" reason="no_symbols" />
     <skipped_module name="nuget.packaging.dll" path="nuget.packaging.dll" reason="no_symbols" />
@@ -758,6 +818,7 @@
     <skipped_module name="microsoft.visualstudio.testplatform.testframework.dll" path="microsoft.visualstudio.testplatform.testframework.dll" reason="path_is_excluded" />
     <skipped_module name="microsoft.build.tasks.core.dll" path="microsoft.build.tasks.core.dll" reason="no_symbols" />
     <skipped_module name="microsoft.net.stringtools.dll" path="microsoft.net.stringtools.dll" reason="no_symbols" />
+    <skipped_module name="castle.core.dll" path="castle.core.dll" reason="no_symbols" />
     <skipped_module name="microsoft.net.build.tasks.dll" path="microsoft.net.build.tasks.dll" reason="no_symbols" />
     <skipped_module name="vstest.console.dll" path="vstest.console.dll" reason="path_is_excluded" />
     <skipped_module name="system.runtime.intrinsics.dll" path="system.runtime.intrinsics.dll" reason="no_symbols" />
@@ -773,6 +834,7 @@
     <skipped_module name="msbuild.dll" path="msbuild.dll" reason="no_symbols" />
     <skipped_module name="microsoft.build.nugetsdkresolver.dll" path="microsoft.build.nugetsdkresolver.dll" reason="no_symbols" />
     <skipped_module name="microsoft.templatesearch.common.dll" path="microsoft.templatesearch.common.dll" reason="no_symbols" />
+    <skipped_module name="moq.dll" path="moq.dll" reason="public_key_token_is_excluded" />
     <skipped_module name="microsoft.dotnet.internalabstractions.dll" path="microsoft.dotnet.internalabstractions.dll" reason="no_symbols" />
     <skipped_module name="nuget.credentials.dll" path="nuget.credentials.dll" reason="no_symbols" />
     <skipped_module name="microsoft.extensions.logging.dll" path="microsoft.extensions.logging.dll" reason="no_symbols" />

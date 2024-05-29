@@ -2,12 +2,14 @@ using EnquiryModule.Controllers;
 using EnquiryModule.Infrastructure;
 using EnquiryModule.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Moq;
 
 
 namespace EnquiryModuleTesting
 {
-    
+
     [TestClass]
     public class UnitTest1
     {
@@ -25,7 +27,7 @@ namespace EnquiryModuleTesting
             _repo = new EnquiryModuleRepo(db);
             _controller = new EnquiryController(_repo);
 
-            
+
         }
 
         [TestMethod]
@@ -49,14 +51,14 @@ namespace EnquiryModuleTesting
                 Age = 30,
                 Status = 1,
                 Dob = DateTime.Now.AddYears(-30),
-                EmployeeId = 2
+                EmployeeId = null
             };
 
             var prevCount = _controller.GetAllEnquires();
             // Act
             var result = _controller.CreateEnquiry(enquirer);
 
-            
+
             // Assert
             Assert.IsInstanceOfType(result, typeof(OkObjectResult));
             var okResult = result as OkObjectResult;
@@ -69,7 +71,7 @@ namespace EnquiryModuleTesting
             // Arrange
             var enquirer = new Enquirer
             {
-               
+
                 Email = null, // Assuming Email is required, this should trigger an exception
                 FirstName = "John",
                 LastName = "Doe",
@@ -90,21 +92,62 @@ namespace EnquiryModuleTesting
             // Act & Assert
             var prevCount = _controller.GetAllEnquires();
             // Act
-           
+
 
             var result = _controller.CreateEnquiry(enquirer);
+
+
+            Assert.AreEqual(prevCount, _controller.GetAllEnquires());
+
+        }
+        [TestMethod]
+        public void CreateEnquiry_ForNullEnquiry()
+        {
+            
+            Enquirer? enquirer = null;
+            var result = _controller.CreateEnquiry(enquirer);
+            Assert.IsInstanceOfType(result, typeof(BadRequestObjectResult));
+
+        }
+        [TestMethod]
+        public void CreateEnquiry_ForExistingEnquiry()
+        {
+            // Arrange
+            var enquirer = new Enquirer
+            {
+                EnquiryId = 7,
+                Email = "test@example.com",
+                FirstName = "John",
+                LastName = "Doe",
+                Addr = "123 Main St",
+                PhoneNo = "1234567890",
+                City = "Test City",
+                Stat = "Test State",
+                Country = "Test Country",
+                PinCode = "123456",
+                MaritalStatus = "Single",
+                Gender = "Male",
+                Age = 30,
+                Status = 1,
+                Dob = DateTime.Now.AddYears(-30),
+                EmployeeId = 1
+            };
+
            
+            var result = _controller.CreateEnquiry(enquirer);
 
-            Assert.AreEqual(prevCount , _controller.GetAllEnquires());
 
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(BadRequestObjectResult));
+           
         }
         [TestMethod]
         public void GetEnquiryById_ReturnsOkResult_WithValidId()
         {
             // Arrange
             var enquiryId = 3;
-           
-     
+
+
             // Act
             var result = _controller.GetEnquiryById(enquiryId);
 
@@ -120,7 +163,7 @@ namespace EnquiryModuleTesting
         {
             // Arrange
             var enquiryId = 1;
-           
+
 
             // Act
             var result = _controller.GetEnquiryById(enquiryId);
@@ -134,7 +177,7 @@ namespace EnquiryModuleTesting
             // Arrange
             var updatedEnquirer = new Enquirer
             {
-                EnquiryId = 3,
+                EnquiryId = 7,
                 Email = "new@example.com",
                 FirstName = "Jane",
                 LastName = "Doe",
@@ -149,7 +192,7 @@ namespace EnquiryModuleTesting
                 Age = 28,
                 Status = 2,
                 Dob = DateTime.Now.AddYears(-28),
-                EmployeeId = 2
+                EmployeeId = 1
             };
 
             // Act
@@ -184,7 +227,7 @@ namespace EnquiryModuleTesting
             // Arrange
             var updatedEnquirer = new Enquirer
             {
-                EnquiryId = 3,
+                EnquiryId = 7,
                 Email = null,
                 FirstName = "Jane",
                 LastName = "Doe",
@@ -199,15 +242,15 @@ namespace EnquiryModuleTesting
                 Age = 28,
                 Status = 2,
                 Dob = DateTime.Now.AddYears(-28),
-                EmployeeId = 2
+                EmployeeId = 1
             };
 
-          
+
             var result = _controller.UpdateEnquiry(updatedEnquirer);
             Assert.IsInstanceOfType(result, typeof(BadRequestObjectResult));
             var badRequestResult = result as BadRequestObjectResult;
             Assert.IsNotNull(badRequestResult);
-       
+
 
         }
         [TestMethod]
@@ -217,6 +260,38 @@ namespace EnquiryModuleTesting
             var updatedEnquirer = new Enquirer
             {
                 EnquiryId = 3,
+                Email = "string",
+                FirstName = "Jane",
+                LastName = "Doe",
+                Addr = "456 Main St",
+                PhoneNo = "0987654321",
+                City = "New City",
+                Stat = "New State",
+                Country = "New Country",
+                PinCode = "654321",
+                MaritalStatus = "Married",
+                Gender = "Female",
+                Age = 28,
+                Status = 2,
+                Dob = DateTime.Now.AddYears(-28),
+                EmployeeId = 0
+            };
+
+
+            var result = _controller.UpdateEnquiry(updatedEnquirer);
+            Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
+            var NotFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(NotFoundResult);
+
+
+        }
+        [TestMethod]
+        public void UpdateEnquiry_For_NotFoundRequestInvalidEnquiryId()
+        {
+            // Arrange
+            var updatedEnquirer = new Enquirer
+            {
+                EnquiryId = 0,
                 Email = "string",
                 FirstName = "Jane",
                 LastName = "Doe",
@@ -277,7 +352,7 @@ namespace EnquiryModuleTesting
                 Doc = new FormFile(docStream, 0, docStream.Length, "Doc", "test.pdf")
             };
 
-           
+
 
             // Act
             var result = await _controller.UploadDocument(docRequest);
@@ -379,7 +454,7 @@ namespace EnquiryModuleTesting
         public void AssignManager_ReturnsOk_ForValidEnquiryId_NewAssigned()
         {
             // Arrange
-            int enqId = 60; // Valid enquiry ID
+            int enqId = 89; // Valid enquiry ID
 
             // Act
             var result = _controller.AssignManager(enqId);
@@ -404,11 +479,68 @@ namespace EnquiryModuleTesting
         [TestMethod]
         public void GetAllEnquires()
         {
-          
+
             var result = _controller.GetAllEnquires();
 
             // Assert
-            Assert.IsInstanceOfType(result,typeof(int));
+            Assert.IsInstanceOfType(result, typeof(int));
+        }
+
+
+
+        [TestMethod]
+        public void CreateEnquiry_Returns_BadRequest_When_EnquiryDataIsNull()
+        {
+            // Arrange
+            Enquirer enquirer = null;
+
+            // Act
+            var result = _controller.CreateEnquiry(enquirer) as BadRequestObjectResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual("Enquiry data cannot be empty", result.Value);
+        }
+
+       
+
+        [TestMethod]
+        public void UpdateEnquiry_ReturnsNotFound_WhenEnquiryDoesNotExist()
+        {
+            // Arrange
+            var enquirer = new Enquirer
+            {
+                EnquiryId = 99, // Enquiry ID for which no enquirer is available
+                Email = "string",
+                FirstName = "Jane",
+                LastName = "Doe",
+                Addr = "456 Main St",
+                PhoneNo = "0987654321",
+                City = "New City",
+                Stat = "New State",
+                Country = "New Country",
+                PinCode = "654321",
+                MaritalStatus = "Married",
+                Gender = "Female",
+                Age = 28,
+                Status = 2,
+                Dob = DateTime.Now.AddYears(-28),
+                EmployeeId = 0
+            };
+
+            // Simulate that the Enquirer does not exist
+            var repoMock = new Mock<IEnquiryModule>();
+            repoMock.Setup(repo => repo.GetEnquirer(enquirer.EnquiryId)).Returns((Enquirer)null);
+            var controller = _controller.UpdateEnquiry(enquirer);
+
+            // Act
+            var result = _controller.UpdateEnquiry(enquirer);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
+            var notFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual($"Enquiry with Id  {enquirer.EnquiryId} doesnot exist", notFoundResult.Value);
         }
     }
 }

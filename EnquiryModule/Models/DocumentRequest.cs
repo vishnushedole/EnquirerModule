@@ -16,12 +16,12 @@ namespace EnquiryModule.Models
     }
     public class DocWithImageData
     {
-        public DocumentRequest DocModel { get; set; }
-        public string ImageData { get; set; }
+        public DocumentRequest? DocModel { get; set; }
+        public string? ImageData { get; set; }
     }
     public class DocumentResponse
     {
         public int docId { get; set; }
-        public string updatedImage { get; set; }
+        public string? updatedImage { get; set; }
     }
 }

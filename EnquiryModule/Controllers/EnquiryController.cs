@@ -17,7 +17,7 @@ namespace EnquiryModule.Controllers
         }
 
         [HttpPost("CreateEnquiry")]
-        public IActionResult CreateEnquiry([FromBody] Enquirer enquirer)
+        public IActionResult CreateEnquiry([FromBody] Enquirer? enquirer)
         {
             try
             {
@@ -25,6 +25,10 @@ namespace EnquiryModule.Controllers
                 if (enquirer is null)
                 {
                     return BadRequest("Enquiry data cannot be empty");
+                }
+                else if(enquirer.EmployeeId!=null)
+                {
+                    return BadRequest("Employee Id should be null");
                 }
                 else if (_repo.GetEnquirer(enquirer.EnquiryId) is null)
                 {
@@ -59,10 +63,10 @@ namespace EnquiryModule.Controllers
             {
                 if(_repo.GetEnquirer(enquirer.EnquiryId) is not null)
                 {
-                    if (_repo.GetManager(enquirer.EmployeeId) is not null)
+                    if (_repo.checkManager(enquirer.EnquiryId,enquirer.EmployeeId))
                         return Ok(_repo.UpdateEnquirer(enquirer));
                     else
-                        return NotFound("Manager with Id  " + enquirer.EmployeeId + " doesnot exist");
+                        return NotFound("Invalid Manager");
                 }
                 else
                     return NotFound("Enquiry with Id  "+enquirer.EnquiryId+" doesnot exist");

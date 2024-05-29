@@ -161,3 +161,6 @@ C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModuleTesting\obj\Debug\net
 C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModuleTesting\obj\Debug\net8.0\ref\EnquiryModuleTesting.dll
 C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModuleTesting\bin\Debug\net8.0\coverage.json
 C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModuleTesting\obj\Debug\net8.0\EnquiryModuleTesting.sourcelink.json
+C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModuleTesting\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModuleTesting\bin\Debug\net8.0\Castle.Core.dll
+C:\Eurofins Training\ConsoleApp\EnquiryModule\EnquiryModuleTesting\bin\Debug\net8.0\Moq.dll

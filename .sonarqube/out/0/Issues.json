@@ -35,74 +35,6 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'DocModel' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModule/Models/DocumentRequest.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 32,
-                  "endLine": 19,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModule/Models/DocumentRequest.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 32,
-                  "endLine": 19,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'ImageData' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModule/Models/DocumentRequest.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 23,
-                  "endLine": 20,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModule/Models/DocumentRequest.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 23,
-                  "endLine": 20,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
           "message": "Non-nullable property 'DocTypes' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "suppressionStates": [
             "suppressedInSource"
@@ -513,27 +445,6 @@
           }
         },
         {
-          "ruleId": "CS0162",
-          "level": "warning",
-          "message": "Unreachable code detected",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModule/Infrastructure/EnquiryModuleRepo.cs",
-                "region": {
-                  "startLine": 145,
-                  "startColumn": 13,
-                  "endLine": 145,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
           "ruleId": "S3251",
           "level": "warning",
           "message": "Supply an implementation for this partial method.",
@@ -546,6 +457,27 @@
                   "startColumn": 5,
                   "endLine": 139,
                   "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1905",
+          "level": "warning",
+          "message": "Remove this unnecessary cast to 'byte[]'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModule/Infrastructure/EnquiryModuleRepo.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 30,
+                  "endLine": 87,
+                  "endColumn": 36
                 }
               }
             }
@@ -597,27 +529,6 @@
           }
         },
         {
-          "ruleId": "S1905",
-          "level": "warning",
-          "message": "Remove this unnecessary cast to 'byte[]'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModule/Infrastructure/EnquiryModuleRepo.cs",
-                "region": {
-                  "startLine": 87,
-                  "startColumn": 30,
-                  "endLine": 87,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CA1829",
           "level": "note",
           "message": "Use the \"Count\" property instead of Enumerable.Count()",
@@ -639,48 +550,6 @@
             "customProperties": {
               "PropertyNameKey": "Count"
             }
-          }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'EnqId' to 'EnquiryId' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModule/Infrastructure/EnquiryModuleRepo.cs",
-                "region": {
-                  "startLine": 108,
-                  "startColumn": 38,
-                  "endLine": 108,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModule/Infrastructure/EnquiryModuleRepo.cs",
-                "region": {
-                  "startLine": 142,
-                  "startColumn": 23,
-                  "endLine": 142,
-                  "endColumn": 89
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
           }
         },
         {
@@ -718,20 +587,6 @@
             "tags": [
               "Telemetry",
               "EnabledRuleInAggressiveMode"
-            ]
-          }
-        },
-        "CS0162": {
-          "id": "CS0162",
-          "shortDescription": "Unreachable code detected",
-          "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0162)",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
             ]
           }
         },
@@ -774,22 +629,6 @@
             "tags": [
               "Compiler",
               "Telemetry"
-            ]
-          }
-        },
-        "S112": {
-          "id": "S112",
-          "shortDescription": "General or reserved exceptions should never be thrown",
-          "fullDescription": "This rule raises an issue when a general or reserved exception is thrown.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "SonarWay"
             ]
           }
         },
@@ -839,23 +678,6 @@
             "tags": [
               "C#",
               "MainSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
-        "S927": {
-          "id": "S927",
-          "shortDescription": "Parameter names should match base declaration and other partial definitions",
-          "fullDescription": "Parameters are part of the method signature and its identity.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
-          "properties": {
-            "category": "Critical Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
               "SonarWay"
             ]
           }

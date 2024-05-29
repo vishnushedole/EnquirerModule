@@ -1,1 +1,0 @@
-C:\Eurofins Training\ConsoleApp\EnquiryModule\.sonarqube\out\11

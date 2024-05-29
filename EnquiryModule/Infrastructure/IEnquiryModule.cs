@@ -18,6 +18,8 @@ namespace EnquiryModule.Infrastructure
 
         public int? AssignManager(int EnquiryId);
 
+        public bool checkManager(int? EnqId, int? EmpId);
+
     }
 
 }

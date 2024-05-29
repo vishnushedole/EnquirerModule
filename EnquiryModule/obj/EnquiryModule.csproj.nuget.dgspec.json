@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\EnquiryModule.csproj": {}
+    "C:\\Training\\Enquiry\\EnquirerModule\\EnquiryModule\\EnquiryModule.csproj": {}
   },
   "projects": {
-    "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\EnquiryModule.csproj": {
+    "C:\\Training\\Enquiry\\EnquirerModule\\EnquiryModule\\EnquiryModule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\EnquiryModule.csproj",
+        "projectUniqueName": "C:\\Training\\Enquiry\\EnquirerModule\\EnquiryModule\\EnquiryModule.csproj",
         "projectName": "EnquiryModule",
-        "projectPath": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\EnquiryModule.csproj",
-        "packagesPath": "C:\\Users\\Vishnu Shedole\\.nuget\\packages\\",
-        "outputPath": "C:\\Eurofins Training\\ConsoleApp\\EnquiryModule\\EnquiryModule\\obj\\",
+        "projectPath": "C:\\Training\\Enquiry\\EnquirerModule\\EnquiryModule\\EnquiryModule.csproj",
+        "packagesPath": "C:\\Users\\Dhruv Rathi\\.nuget\\packages\\",
+        "outputPath": "C:\\Training\\Enquiry\\EnquirerModule\\EnquiryModule\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vishnu Shedole\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dhruv Rathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

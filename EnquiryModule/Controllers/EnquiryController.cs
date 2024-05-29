@@ -22,23 +22,19 @@ namespace EnquiryModule.Controllers
             try
             {
 
-                if (enquirer is null)
+
+                if (!ModelState.IsValid)
                 {
-                    return BadRequest("Enquiry data cannot be empty");
+                    return BadRequest(ModelState);
                 }
-                else if(enquirer.EmployeeId!=null)
+
+                if(enquirer.EmployeeId!=null)
                 {
                     return BadRequest("Employee Id should be null");
                 }
-                else if (_repo.GetEnquirer(enquirer.EnquiryId) is null)
-                {
-                    return Ok(_repo.CreateEnquiry(enquirer));
-                }
-                else
-                {
-                    return BadRequest("Enquirer alread exist");
-                }
-            }catch (Exception ex) 
+                return Ok(_repo.CreateEnquiry(enquirer));
+            }
+            catch (Exception ex) 
             {
              return BadRequest(ex.Message);
             }
@@ -61,15 +57,22 @@ namespace EnquiryModule.Controllers
         {
             try
             {
-                if(_repo.GetEnquirer(enquirer.EnquiryId) is not null)
+
+
+                if (!ModelState.IsValid)
                 {
-                    if (_repo.checkManager(enquirer.EnquiryId,enquirer.EmployeeId))
+                    return BadRequest(ModelState);
+                }
+
+                if (_repo.GetEnquirer(enquirer.EnquiryId) is not null)
+                {
+                    if (_repo.checkManager(enquirer.EnquiryId,enquirer.EmployeeId))                  
                         return Ok(_repo.UpdateEnquirer(enquirer));
                     else
                         return NotFound("Invalid Manager");
                 }
                 else
-                    return NotFound("Enquiry with Id  "+enquirer.EnquiryId+" doesnot exist");
+                    return NotFound("Enquiry with Id  "+enquirer.EnquiryId+" does not exist");
 
             }
             catch (Exception ex)
@@ -141,6 +144,7 @@ namespace EnquiryModule.Controllers
 
             return Ok(response);
         }
+
         [HttpGet("GetAllEnquires")]
         public int GetAllEnquires()
         {

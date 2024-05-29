@@ -39,7 +39,7 @@ namespace EnquiryModule.Infrastructure
 
         public Enquirer GetEnquirer(int EnquiryId)
         {
-           return _db.Enquirers.FirstOrDefault(e=>e.EnquiryId == EnquiryId);
+           return _db.Enquirers.FirstOrDefault(e=>e.EnquiryId == EnquiryId && e.Status !=1);
         }
       
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EnquiryModuleTesting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f3179d51bd9680be69f888a9a3f3f745c5a51f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d1316983a7199b6d2bc1a4bd444891705d85294")]
 [assembly: System.Reflection.AssemblyProductAttribute("EnquiryModuleTesting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EnquiryModuleTesting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

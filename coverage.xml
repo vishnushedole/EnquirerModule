@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <results>
   <modules>
-    <module id="F2690D82BD93424688389AB40E19B1720EDEF59E" name="EnquiryModule.dll" path="EnquiryModule.dll" block_coverage="94.33" line_coverage="88.99" blocks_covered="616" blocks_not_covered="37" lines_covered="202" lines_partially_covered="0" lines_not_covered="25">
+    <module id="E9B7D83AF61DEF4A9D2B0E81160F0D6DACD5D6E3" name="EnquiryModule.dll" path="EnquiryModule.dll" block_coverage="94.33" line_coverage="88.99" blocks_covered="616" blocks_not_covered="37" lines_covered="202" lines_partially_covered="0" lines_not_covered="25">
       <functions>
         <function id="8736" token="0x600000c" name="&lt;Main&gt;$(string[])" type_name="Program" block_coverage="0.00" line_coverage="0.00" blocks_covered="0" blocks_not_covered="25" lines_covered="0" lines_partially_covered="0" lines_not_covered="17">
           <ranges>
@@ -443,7 +443,7 @@
         <skipped_function id="19336" original_id="19336" token="0x60000bf" name="&lt;OnModelCreating&gt;b__23_4(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder&lt;EnquiryModule.Models.MgrAssignedEnquire&gt;)" type_name="EnquiryModuleContext.&lt;&gt;c" reason="attribute_excluded" />
       </skipped_functions>
     </module>
-    <module id="3C6DFA61E62F3E47AF2E0B2A70982E6AFEDAFFDD" name="EnquiryModuleTesting.dll" path="EnquiryModuleTesting.dll" block_coverage="99.75" line_coverage="99.71" blocks_covered="404" blocks_not_covered="1" lines_covered="343" lines_partially_covered="1" lines_not_covered="0">
+    <module id="759F8CE0AB596949B1B13EB81550C6200E94D89F" name="EnquiryModuleTesting.dll" path="EnquiryModuleTesting.dll" block_coverage="99.75" line_coverage="99.71" blocks_covered="404" blocks_not_covered="1" lines_covered="343" lines_partially_covered="1" lines_not_covered="0">
       <functions>
         <function id="8284" token="0x6000003" name="Setup()" namespace="EnquiryModuleTesting" type_name="UnitTest1" block_coverage="100.00" line_coverage="100.00" blocks_covered="4" blocks_not_covered="0" lines_covered="5" lines_partially_covered="0" lines_not_covered="0">
           <ranges>

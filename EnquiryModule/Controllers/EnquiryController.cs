@@ -47,7 +47,7 @@ namespace EnquiryModule.Controllers
             var enquirer = _repo.GetEnquirer(EnquiryId);
             if (enquirer == null)
             {
-                return NotFound();
+                return NotFound("Enquiry Not found");
             }
             return Ok(enquirer);
         }
@@ -57,8 +57,16 @@ namespace EnquiryModule.Controllers
         {
             try
             {
+                if(_repo.GetEnquirer(enquirer.EnquiryId) is not null)
+                {
+                    if (_repo.GetManager(enquirer.EmployeeId) is not null)
+                        return Ok(_repo.UpdateEnquirer(enquirer));
+                    else
+                        return NotFound("Manager with Id  " + enquirer.EmployeeId + " doesnot exist");
+                }
+                else
+                    return NotFound("Enquiry with Id  "+enquirer.EnquiryId+" doesnot exist");
 
-            return Ok(_repo.UpdateEnquirer(enquirer));
             }
             catch (Exception ex)
             {
@@ -125,7 +133,7 @@ namespace EnquiryModule.Controllers
         { 
             var response = _repo.AssignManager(EnqId);
             if (response == -1)
-                return NotFound("Enquiry Not found");
+                return NotFound("Enquirer Not found");
 
             return Ok(response);
         }

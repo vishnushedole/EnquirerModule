@@ -16,7 +16,7 @@ namespace EnquiryModule.Infrastructure
 
         public Document UpdateDocument(Document document);
 
-        public int AssignManager(int EnquiryId);
+        public int? AssignManager(int EnquiryId);
 
     }
 

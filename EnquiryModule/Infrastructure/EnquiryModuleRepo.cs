@@ -41,8 +41,11 @@ namespace EnquiryModule.Infrastructure
         {
            return _db.Enquirers.FirstOrDefault(e=>e.EnquiryId == EnquiryId);
         }
-        
-        
+        public Manager GetManager(int? EmployeeId)
+        {
+            return _db.Managers.FirstOrDefault(e => e.EmpId == EmployeeId);
+        }
+
 
         public Enquirer UpdateEnquirer(Enquirer enquirer)
         {
@@ -105,11 +108,16 @@ namespace EnquiryModule.Infrastructure
             
             return document;
         }
-        public int AssignManager(int EnqId)
+        public int? AssignManager(int EnqId)
         {
             var enquiry = GetEnquirer(EnqId);
             if (enquiry == null)
                 return -1;
+
+            var MgrAssignEnq = _db.MgrAssignedEnquires.FirstOrDefault(e => e.EnquiryId == EnqId);
+
+            if (MgrAssignEnq is not null)
+                return MgrAssignEnq.EmpId;
 
             var leastLoadedManagerId = _db.MgrAssignedEnquires
              .Where(m => m.Isprocessed != true)

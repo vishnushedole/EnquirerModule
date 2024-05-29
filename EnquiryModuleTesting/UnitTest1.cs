@@ -126,7 +126,7 @@ namespace EnquiryModuleTesting
             var result = _controller.GetEnquiryById(enquiryId);
 
             // Assert
-            Assert.IsInstanceOfType(result, typeof(NotFoundResult));
+            Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
         }
         [TestMethod]
         public void UpdateEnquiry_ReturnsUpdatedEnquirer()
@@ -208,6 +208,38 @@ namespace EnquiryModuleTesting
             var badRequestResult = result as BadRequestObjectResult;
             Assert.IsNotNull(badRequestResult);
        
+
+        }
+        [TestMethod]
+        public void UpdateEnquiry_For_NotFoundRequest()
+        {
+            // Arrange
+            var updatedEnquirer = new Enquirer
+            {
+                EnquiryId = 3,
+                Email = "string",
+                FirstName = "Jane",
+                LastName = "Doe",
+                Addr = "456 Main St",
+                PhoneNo = "0987654321",
+                City = "New City",
+                Stat = "New State",
+                Country = "New Country",
+                PinCode = "654321",
+                MaritalStatus = "Married",
+                Gender = "Female",
+                Age = 28,
+                Status = 2,
+                Dob = DateTime.Now.AddYears(-28),
+                EmployeeId = 0
+            };
+
+
+            var result = _controller.UpdateEnquiry(updatedEnquirer);
+            Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
+            var NotFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(NotFoundResult);
+
 
         }
         [TestMethod]
@@ -330,10 +362,24 @@ namespace EnquiryModuleTesting
             Assert.IsInstanceOfType(result, typeof(BadRequestObjectResult));
         }
         [TestMethod]
-        public void AssignManager_ReturnsOk_ForValidEnquiryId()
+        public void AssignManager_ReturnsOk_ForValidEnquiryId_AlreadyAssigned()
         {
             // Arrange
             int enqId = 21; // Valid enquiry ID
+
+            // Act
+            var result = _controller.AssignManager(enqId);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(OkObjectResult));
+            var okResult = result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+        }
+        [TestMethod]
+        public void AssignManager_ReturnsOk_ForValidEnquiryId_NewAssigned()
+        {
+            // Arrange
+            int enqId = 60; // Valid enquiry ID
 
             // Act
             var result = _controller.AssignManager(enqId);

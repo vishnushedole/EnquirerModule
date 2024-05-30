@@ -13,11 +13,11 @@ namespace EnquiryModule.Infrastructure
         }
         
 
-        public Document CreateDocument(int enqId, int custId, int docType, byte[] docData)
+        public Document CreateDocument(int enqId, int docType, byte[] docData)
         {
             Document document = new Document();
             document.EnqId = enqId; 
-            document.CustId = custId;
+            document.CustId = null;
             document.DocTypeId = docType;
             document.Status = 0;
             document.Doc = docData;
@@ -39,7 +39,7 @@ namespace EnquiryModule.Infrastructure
 
         public Enquirer GetEnquirer(int EnquiryId)
         {
-           return _db.Enquirers.FirstOrDefault(e=>e.EnquiryId == EnquiryId);
+           return _db.Enquirers.FirstOrDefault(e=>e.EnquiryId == EnquiryId && e.Status !=1);
         }
       
 
@@ -76,12 +76,13 @@ namespace EnquiryModule.Infrastructure
             {
                 return null;
             }
-            var docModel = new DocumentRequest
+            var docModel = new GetDocumentRequest
             {
                 DocId = document.DocId,
                 EnqId = document.EnqId,
                 DocTypeId = document.DocTypeId,
                 Status = document.Status
+               
             };
 
             var imageData = (byte[])document.Doc;
@@ -94,9 +95,7 @@ namespace EnquiryModule.Infrastructure
             _db.Documents
          .Where(d => d.DocId == document.DocId)
             .ExecuteUpdate(setters =>
-             setters.SetProperty(p => p.EnqId, document.EnqId)
-                    .SetProperty(p => p.CustId, document.CustId)
-                    .SetProperty(p => p.DocTypeId, document.DocTypeId)
+             setters.SetProperty(p => p.DocTypeId, document.DocTypeId)
                     .SetProperty(p => p.Status, document.Status)
                     .SetProperty(p => p.Doc, document.Doc)
          );
@@ -151,6 +150,24 @@ namespace EnquiryModule.Infrastructure
         public bool checkManager(int? EnqId,int? EmpId)
         {
             var data = _db.MgrAssignedEnquires.FirstOrDefault(e => e.EnquiryId == EnqId && e.EmpId==EmpId);
+
+            if (data == null)
+                return false;
+
+            return true;
+        }
+        public bool checkDocType(int? DocTypeId)
+        {
+            var data = _db.DocTypes.FirstOrDefault(e => e.DocType1==DocTypeId);
+
+            if (data == null)
+                return false;
+
+            return true;
+        }
+        public bool CheckValidDocUpdate(int? DocId, int? EnqId)
+        {
+            var data = _db.Documents.FirstOrDefault(e => e.DocId == DocId && e.EnqId == EnqId);
 
             if (data == null)
                 return false;

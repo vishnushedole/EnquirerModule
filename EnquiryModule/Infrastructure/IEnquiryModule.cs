@@ -10,7 +10,7 @@ namespace EnquiryModule.Infrastructure
 
         public Enquirer GetEnquirer(int EnquiryId);
 
-        public Document CreateDocument(int enqId, int custId, int docType, byte[] docData);
+        public Document CreateDocument(int enqId, int docType, byte[] docData);
 
         public DocWithImageData GetDocument(int DocId);
 

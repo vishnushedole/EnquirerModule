@@ -2,7 +2,7 @@
   {
     "ContainingType": "EnquiryModule.Controllers.EnquiryController",
     "Method": "AssignManager",
-    "RelativePath": "api/Enquiry/AssignManager",
+    "RelativePath": "Enquiry/AssignManager",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -10,22 +10,6 @@
       {
         "Name": "EnqId",
         "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
-    "Method": "CreateEnquiry",
-    "RelativePath": "api/Enquiry/CreateEnquiry",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "enquirer",
-        "Type": "EnquiryModule.Models.Enquirer",
         "IsRequired": true
       }
     ],
@@ -33,8 +17,24 @@
   },
   {
     "ContainingType": "EnquiryModule.Controllers.EnquiryController",
+    "Method": "CreateEnquiry",
+    "RelativePath": "Enquiry/CreateEnquiry",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enquirer",
+        "Type": "EnquiryModule.Models.Enquirer",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnquiryModule.Controllers.EnquiryController",
     "Method": "GetAllEnquires",
-    "RelativePath": "api/Enquiry/GetAllEnquires",
+    "RelativePath": "Enquiry/GetAllEnquires",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -54,7 +54,7 @@
   {
     "ContainingType": "EnquiryModule.Controllers.EnquiryController",
     "Method": "GetDocumentById",
-    "RelativePath": "api/Enquiry/GetDocument",
+    "RelativePath": "Enquiry/GetDocument",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -70,7 +70,7 @@
   {
     "ContainingType": "EnquiryModule.Controllers.EnquiryController",
     "Method": "GetEnquiryById",
-    "RelativePath": "api/Enquiry/GetEnquiry",
+    "RelativePath": "Enquiry/GetEnquiry",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -86,7 +86,7 @@
   {
     "ContainingType": "EnquiryModule.Controllers.EnquiryController",
     "Method": "UpdateDocument",
-    "RelativePath": "api/Enquiry/UpdateDocument",
+    "RelativePath": "Enquiry/UpdateDocument",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -127,7 +127,7 @@
   {
     "ContainingType": "EnquiryModule.Controllers.EnquiryController",
     "Method": "UpdateEnquiry",
-    "RelativePath": "api/Enquiry/UpdateEnquiry",
+    "RelativePath": "Enquiry/UpdateEnquiry",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -143,33 +143,18 @@
   {
     "ContainingType": "EnquiryModule.Controllers.EnquiryController",
     "Method": "UploadDocument",
-    "RelativePath": "api/Enquiry/UploadDocument",
+    "RelativePath": "Enquiry/UploadDocument",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "DocId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
       {
         "Name": "EnqId",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "CustId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "DocTypeId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Status",
         "Type": "System.Int32",
         "IsRequired": false
       },

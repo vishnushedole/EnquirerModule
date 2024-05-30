@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EnquiryModule.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class EnquiryController : ControllerBase
     {
@@ -22,23 +22,19 @@ namespace EnquiryModule.Controllers
             try
             {
 
-                if (enquirer is null)
+
+                if (!ModelState.IsValid)
                 {
-                    return BadRequest("Enquiry data cannot be empty");
+                    return BadRequest(ModelState);
                 }
-                else if(enquirer.EmployeeId!=null)
+
+                if(enquirer.EmployeeId!=null)
                 {
                     return BadRequest("Employee Id should be null");
                 }
-                else if (_repo.GetEnquirer(enquirer.EnquiryId) is null)
-                {
-                    return Ok(_repo.CreateEnquiry(enquirer));
-                }
-                else
-                {
-                    return BadRequest("Enquirer alread exist");
-                }
-            }catch (Exception ex) 
+                return Ok(_repo.CreateEnquiry(enquirer));
+            }
+            catch (Exception ex) 
             {
              return BadRequest(ex.Message);
             }
@@ -61,15 +57,22 @@ namespace EnquiryModule.Controllers
         {
             try
             {
-                if(_repo.GetEnquirer(enquirer.EnquiryId) is not null)
+
+
+                if (!ModelState.IsValid)
                 {
-                    if (_repo.checkManager(enquirer.EnquiryId,enquirer.EmployeeId))
+                    return BadRequest(ModelState);
+                }
+
+                if (_repo.GetEnquirer(enquirer.EnquiryId) is not null)
+                {
+                    if (_repo.checkManager(enquirer.EnquiryId,enquirer.EmployeeId))                  
                         return Ok(_repo.UpdateEnquirer(enquirer));
                     else
                         return NotFound("Invalid Manager");
                 }
                 else
-                    return NotFound("Enquiry with Id  "+enquirer.EnquiryId+" doesnot exist");
+                    return NotFound("Enquiry with Id  "+enquirer.EnquiryId+" does not exist");
 
             }
             catch (Exception ex)
@@ -83,13 +86,19 @@ namespace EnquiryModule.Controllers
             if (docModel == null || docModel.Doc == null || docModel.Doc.Length == 0)
                 return BadRequest("Invalid document");
 
+            if (_repo.GetEnquirer(docModel.EnqId) is null)
+                return NotFound("Enquirer Not found");
+
+            if (_repo.checkDocType(docModel.DocTypeId) == false)
+                return NotFound("DocType is not valid");
+
             using (var memoryStream = new MemoryStream())
             {
                 await docModel.Doc.CopyToAsync(memoryStream);
                 var docData = memoryStream.ToArray();
 
 
-                var docId = _repo.CreateDocument(docModel.EnqId, docModel.CustId, docModel.DocTypeId, docData);
+                var docId = _repo.CreateDocument(docModel.EnqId, docModel.DocTypeId, docData);
 
                 return Ok(new { DocId = docId });
             }
@@ -106,10 +115,19 @@ namespace EnquiryModule.Controllers
         }
 
         [HttpPut("UpdateDocument")]
-        public async Task<IActionResult> UpdateDocument(DocumentRequest docModel)
+        public async Task<IActionResult> UpdateDocument(UpdateDocumentRequest docModel)
         {
             if (docModel == null || docModel.Doc == null || docModel.Doc.Length == 0)
                 return BadRequest("Invalid document");
+
+            if (_repo.checkDocType(docModel.DocTypeId) == false)
+                return NotFound("DocType Id not found");
+
+            if (docModel.Status > 2 || docModel.Status < 0)
+                return BadRequest("Invalid status type");
+
+            if (_repo.CheckValidDocUpdate(docModel.DocId, docModel.EnqId) == false)
+                return BadRequest("Invalid Update request");
 
             using (var memoryStream = new MemoryStream())
             {
@@ -133,7 +151,7 @@ namespace EnquiryModule.Controllers
             }
         }
         [HttpPost("AssignManager")]
-        public IActionResult AssignManager(int EnqId) 
+        public IActionResult AssignManager([FromBody]int EnqId) 
         { 
             var response = _repo.AssignManager(EnqId);
             if (response == -1)
@@ -141,6 +159,7 @@ namespace EnquiryModule.Controllers
 
             return Ok(response);
         }
+
         [HttpGet("GetAllEnquires")]
         public int GetAllEnquires()
         {

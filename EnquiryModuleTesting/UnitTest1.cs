@@ -49,7 +49,7 @@ namespace EnquiryModuleTesting
                 MaritalStatus = "Single",
                 Gender = "Male",
                 Age = 30,
-                Status = 1,
+                Status = 0,
                 Dob = DateTime.Now.AddYears(-30),
                 EmployeeId = null
             };
@@ -344,11 +344,9 @@ namespace EnquiryModuleTesting
             var docStream = new MemoryStream(docContent);
             var docRequest = new DocumentRequest
             {
-                DocId = 0,
+               
                 EnqId = 3,
-                CustId = 1,
                 DocTypeId = 1,
-                Status = 0,
                 Doc = new FormFile(docStream, 0, docStream.Length, "Doc", "test.pdf")
             };
 
@@ -364,6 +362,56 @@ namespace EnquiryModuleTesting
             var resultValue = okResult.Value as dynamic;
             Assert.IsNotNull(resultValue);
             //Assert.IsTrue(resultValue.DocId > 0); // Assuming DocId is generated and greater than 0
+        }
+        [TestMethod]
+        public async Task UploadDocument_ReturnsNotFound_ForInvalidEnquirer()
+        {
+            // Arrange
+            var docContent = new byte[] { 1, 2, 3, 4, 5 }; // Sample document content
+            var docStream = new MemoryStream(docContent);
+            var docRequest = new DocumentRequest
+            {
+
+                EnqId = 1,
+                DocTypeId = 1,
+                Doc = new FormFile(docStream, 0, docStream.Length, "Doc", "test.pdf")
+            };
+
+
+
+            // Act
+            var result = await _controller.UploadDocument(docRequest);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
+            var notFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(notFoundResult);
+           
+        }
+        [TestMethod]
+        public async Task UploadDocument_ReturnsNotFound_ForInvalidDocType()
+        {
+            // Arrange
+            var docContent = new byte[] { 1, 2, 3, 4, 5 }; // Sample document content
+            var docStream = new MemoryStream(docContent);
+            var docRequest = new DocumentRequest
+            {
+
+                EnqId = 3,
+                DocTypeId = 4,
+                Doc = new FormFile(docStream, 0, docStream.Length, "Doc", "test.pdf")
+            };
+
+
+
+            // Act
+            var result = await _controller.UploadDocument(docRequest);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
+            var notFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(notFoundResult);
+
         }
         [TestMethod]
         public void GetDocumentById_ReturnsOk_ForValidDocumentId()
@@ -395,7 +443,7 @@ namespace EnquiryModuleTesting
             // Arrange
             var docContent = new byte[] { 1, 2, 3, 4, 5 }; // Sample document content
             var docStream = new MemoryStream(docContent);
-            var docRequest = new DocumentRequest
+            var docRequest = new UpdateDocumentRequest
             {
                 DocId = 2,
                 EnqId = 7,
@@ -428,13 +476,88 @@ namespace EnquiryModuleTesting
         public async Task UpdateDocument_ReturnsBadRequest_ForInvalidDocumentRequest()
         {
             // Arrange
-            var invalidDocRequest = new DocumentRequest { }; // Invalid request with null properties
+            var invalidDocRequest = new UpdateDocumentRequest { }; // Invalid request with null properties
 
             // Act
             var result = await _controller.UpdateDocument(invalidDocRequest);
 
             // Assert
             Assert.IsInstanceOfType(result, typeof(BadRequestObjectResult));
+        }
+        [TestMethod]
+        public async Task UpdateDocument_ForNotFoundDocumentRequest()
+        {
+            // Arrange
+            var docContent = new byte[] { 1, 2, 3, 4, 5 }; // Sample document content
+            var docStream = new MemoryStream(docContent);
+            var docRequest = new UpdateDocumentRequest
+            {
+                DocId = 2,
+                EnqId = 7,
+                CustId = 1,
+                Status = 0,
+                DocTypeId = 4,
+                Doc = new FormFile(docStream, 0, docStream.Length, "Doc", "test.pdf")
+            };
+
+            // Act
+            var result = await _controller.UpdateDocument(docRequest);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
+            var NotFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(NotFoundResult);
+  
+        }
+        [TestMethod]
+        public async Task UpdateDocument_ForInvalidStatusRequest()
+        {
+            // Arrange
+            var docContent = new byte[] { 1, 2, 3, 4, 5 }; // Sample document content
+            var docStream = new MemoryStream(docContent);
+            var docRequest = new UpdateDocumentRequest
+            {
+                DocId = 2,
+                EnqId = 7,
+                CustId = 1,
+                Status = 4,
+                DocTypeId = 1,
+                Doc = new FormFile(docStream, 0, docStream.Length, "Doc", "test.pdf")
+            };
+
+            // Act
+            var result = await _controller.UpdateDocument(docRequest);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(BadRequestObjectResult));
+            var BadResult = result as BadRequestObjectResult;
+            Assert.IsNotNull(BadResult);
+
+        }
+        [TestMethod]
+        public async Task UpdateDocument_ForInvalidUpdateRequest()
+        {
+            // Arrange
+            var docContent = new byte[] { 1, 2, 3, 4, 5 }; // Sample document content
+            var docStream = new MemoryStream(docContent);
+            var docRequest = new UpdateDocumentRequest
+            {
+                DocId = 2,
+                EnqId = 6,
+                CustId = 1,
+                Status = 2,
+                DocTypeId = 1,
+                Doc = new FormFile(docStream, 0, docStream.Length, "Doc", "test.pdf")
+            };
+
+            // Act
+            var result = await _controller.UpdateDocument(docRequest);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(BadRequestObjectResult));
+            var BadResult = result as BadRequestObjectResult;
+            Assert.IsNotNull(BadResult);
+
         }
         [TestMethod]
         public void AssignManager_ReturnsOk_ForValidEnquiryId_AlreadyAssigned()
@@ -454,7 +577,7 @@ namespace EnquiryModuleTesting
         public void AssignManager_ReturnsOk_ForValidEnquiryId_NewAssigned()
         {
             // Arrange
-            int enqId = 89; // Valid enquiry ID
+            int enqId = 79; // Valid enquiry ID
 
             // Act
             var result = _controller.AssignManager(enqId);
@@ -499,7 +622,7 @@ namespace EnquiryModuleTesting
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual("Enquiry data cannot be empty", result.Value);
+            Assert.IsInstanceOfType(result, typeof(BadRequestObjectResult));
         }
 
        
@@ -510,7 +633,7 @@ namespace EnquiryModuleTesting
             // Arrange
             var enquirer = new Enquirer
             {
-                EnquiryId = 99, // Enquiry ID for which no enquirer is available
+                EnquiryId = 0, // Enquiry ID for which no enquirer is available
                 Email = "string",
                 FirstName = "Jane",
                 LastName = "Doe",
@@ -528,10 +651,7 @@ namespace EnquiryModuleTesting
                 EmployeeId = 0
             };
 
-            // Simulate that the Enquirer does not exist
-            var repoMock = new Mock<IEnquiryModule>();
-            repoMock.Setup(repo => repo.GetEnquirer(enquirer.EnquiryId)).Returns((Enquirer)null);
-            var controller = _controller.UpdateEnquiry(enquirer);
+           
 
             // Act
             var result = _controller.UpdateEnquiry(enquirer);
@@ -540,7 +660,7 @@ namespace EnquiryModuleTesting
             Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
             var notFoundResult = result as NotFoundObjectResult;
             Assert.IsNotNull(notFoundResult);
-            Assert.AreEqual($"Enquiry with Id  {enquirer.EnquiryId} doesnot exist", notFoundResult.Value);
+            Assert.AreEqual($"Enquiry with Id  {enquirer.EnquiryId} does not exist", notFoundResult.Value);
         }
     }
 }

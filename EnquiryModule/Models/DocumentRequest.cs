@@ -1,4 +1,6 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace EnquiryModule.Models
 {
@@ -6,17 +8,59 @@ namespace EnquiryModule.Models
     public class DocumentRequest
     {
 
-        public int DocId { get; set; }
+        [Required]
         public int EnqId { get; set; }
-        public int CustId { get; set; }
+
+        [Required]
         public int DocTypeId { get; set; }
-        public int Status { get; set; }
+
+        [Required]
         public IFormFile? Doc { get; set; }
+
+    }
+    
+    public class UpdateDocumentRequest
+    {
+
+        public int DocId { get; set; }
+
+        [Required]
+        public int EnqId { get; set; }
+
+        public int CustId { get; set; }
+
+        [Required]
+        public int DocTypeId { get; set; }
+
+        [Required]
+        public int Status { get; set; } 
+
+        [Required]
+        public IFormFile? Doc { get; set; }
+
+    }
+    public class GetDocumentRequest
+    {
+
+        public int DocId { get; set; }
+
+        [Required]
+        public int EnqId { get; set; }
+
+        public int CustId { get; set; }
+
+        [Required]
+        public int DocTypeId { get; set; }
+
+        [Required]
+        public int Status { get; set; }
+
+     
 
     }
     public class DocWithImageData
     {
-        public DocumentRequest? DocModel { get; set; }
+        public GetDocumentRequest? DocModel { get; set; }
         public string? ImageData { get; set; }
     }
     public class DocumentResponse

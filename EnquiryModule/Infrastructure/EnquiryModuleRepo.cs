@@ -24,6 +24,7 @@ namespace EnquiryModule.Infrastructure
 
             _db.Documents.Add(document);
             _db.SaveChanges();
+
             return document;
         }
 

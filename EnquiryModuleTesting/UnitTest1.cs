@@ -577,7 +577,7 @@ namespace EnquiryModuleTesting
         public void AssignManager_ReturnsOk_ForValidEnquiryId_NewAssigned()
         {
             // Arrange
-            int enqId = 79; // Valid enquiry ID
+            int enqId = 99; // Valid enquiry ID
 
             // Act
             var result = _controller.AssignManager(enqId);

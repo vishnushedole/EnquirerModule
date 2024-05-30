@@ -104,9 +104,9 @@
               "resultFile": {
                 "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModuleTesting/UnitTest1.cs",
                 "region": {
-                  "startLine": 380,
+                  "startLine": 428,
                   "startColumn": 32,
-                  "endLine": 380,
+                  "endLine": 428,
                   "endColumn": 49
                 }
               }
@@ -125,9 +125,9 @@
               "resultFile": {
                 "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModuleTesting/UnitTest1.cs",
                 "region": {
-                  "startLine": 417,
+                  "startLine": 465,
                   "startColumn": 44,
-                  "endLine": 417,
+                  "endLine": 465,
                   "endColumn": 78
                 }
               }
@@ -146,52 +146,10 @@
               "resultFile": {
                 "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModuleTesting/UnitTest1.cs",
                 "region": {
-                  "startLine": 495,
+                  "startLine": 618,
                   "startColumn": 33,
-                  "endLine": 495,
+                  "endLine": 618,
                   "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModuleTesting/UnitTest1.cs",
-                "region": {
-                  "startLine": 533,
-                  "startColumn": 82,
-                  "endLine": 533,
-                  "endColumn": 96
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8625",
-          "level": "warning",
-          "message": "Cannot convert null literal to non-nullable reference type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Eurofins%20Training/ConsoleApp/EnquiryModule/EnquiryModuleTesting/UnitTest1.cs",
-                "region": {
-                  "startLine": 533,
-                  "startColumn": 82,
-                  "endLine": 533,
-                  "endColumn": 96
                 }
               }
             }

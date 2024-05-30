@@ -28,7 +28,7 @@ namespace EnquiryModule.Controllers
                     return BadRequest(ModelState);
                 }
 
-                if(enquirer.EmployeeId!=null)
+                if(enquirer?.EmployeeId!=null)
                 {
                     return BadRequest("Employee Id should be null");
                 }
@@ -89,7 +89,7 @@ namespace EnquiryModule.Controllers
             if (_repo.GetEnquirer(docModel.EnqId) is null)
                 return NotFound("Enquirer Not found");
 
-            if (_repo.checkDocType(docModel.DocTypeId) == false)
+            if (!_repo.checkDocType(docModel.DocTypeId))
                 return NotFound("DocType is not valid");
 
             using (var memoryStream = new MemoryStream())
@@ -100,7 +100,7 @@ namespace EnquiryModule.Controllers
 
                 var docId = _repo.CreateDocument(docModel.EnqId, docModel.DocTypeId, docData);
 
-                return Ok(new { DocId = docId });
+                return Ok(new {Id=docId.DocId,Document=docId.Doc});
             }
         }
 
@@ -120,13 +120,13 @@ namespace EnquiryModule.Controllers
             if (docModel == null || docModel.Doc == null || docModel.Doc.Length == 0)
                 return BadRequest("Invalid document");
 
-            if (_repo.checkDocType(docModel.DocTypeId) == false)
+            if (!_repo.checkDocType(docModel.DocTypeId))
                 return NotFound("DocType Id not found");
 
             if (docModel.Status > 2 || docModel.Status < 0)
                 return BadRequest("Invalid status type");
 
-            if (_repo.CheckValidDocUpdate(docModel.DocId, docModel.EnqId) == false)
+            if (!_repo.CheckValidDocUpdate(docModel.DocId, docModel.EnqId))
                 return BadRequest("Invalid Update request");
 
             using (var memoryStream = new MemoryStream())
